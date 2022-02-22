@@ -45,4 +45,4 @@ let whichWeekDay = (input) => {
     }
     return `Invalid input.`;
 }
-console.log(whichWeekDay(input));
+//console.log(whichWeekDay(input));
