@@ -85,12 +85,14 @@ function toUpperCase(arr) {
 
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies
 function printAsSentence(arr) {
-    arr.splice((arr.length - 1), 0, 'and');
-    let tempStr =  arr.join(', ').trim();
+    let newArr = arr.slice(0);
+    newArr.splice((newArr.length - 1), 0, 'and');
+    let tempStr =  newArr.join(', ').trim();
     tempStr = tempStr.replace(/and,/, 'and');
     return tempStr + " are big IT companies";
 }
-//console.log(printAsSentence(itCompanies));
+console.log(printAsSentence(itCompanies));
+console.log(itCompanies);
 
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 function itExists(arr, search) {
@@ -167,4 +169,4 @@ function removeAllCompanies(arr) {
     newArr.splice(0);
     return newArr;
 }
-console.log(removeAllCompanies(itCompanies));
+//console.log(removeAllCompanies(itCompanies));
