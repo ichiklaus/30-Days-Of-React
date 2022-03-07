@@ -4,8 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" type="text/css" > -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>30 Days of React - ongoing...</title>
+    <style>
+      :root {
+        --dark-navy: #020c1b;
+        --navy: #0a192f;
+        --light-navy: #112240;
+        --lightest-navy: #233554;
+        --navy-shadow: rgba(2, 12, 27, 0.7);
+        --slate: #8892b0;
+        --light-slate: #a8b2d1;
+        --lightest-slate: #ccd6f6;
+        --white: #e6f1ff;
+        --green-bright: #64ffda;
+        --green-tint: rgba(100, 255, 218, 0.1);
+      }
+
+      * {
+        line-height: 1.5;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--light-navy);
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--green-bright);
+      }
+
+      a:hover {
+        color: var(--lightest-slate);
+      }
+
+      input::placeholder {
+        color: var(--dark-navy);
+        font-weight: bolder;
+      }
+
+      .intro-title {
+        font-size: 3em;
+      }
+
+      .intro-name {
+        color: var(--green-bright);
+      }
+
+      .intro-second-title,
+      .intro-description,
+      .description,
+      .social-links {
+        color: var(--slate);
+      }
+
+      .intro-info-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .intro-info {
+        color: var(--light-slate);
+        font-weight: bolder;
+      }
+
+      .copyright {
+        color: var(--green-bright);
+      }
+
+      .fn-input {
+        color: var(--green-bright);
+      }
+
+      .container {
+        /* margin: 0 auto;
+        padding: 2rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15%;
+        padding-top: 5%;
+        min-height: 100vh;
+        max-width: 55%;
+      }
+    </style>
   </head>
   <body>
     <div class="root"></div>
