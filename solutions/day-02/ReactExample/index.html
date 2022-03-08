@@ -51,7 +51,18 @@
 
       input::placeholder {
         color: var(--dark-navy);
-        font-weight: bolder;
+        font-weight: 400;
+      }
+
+      .container {
+        /* margin: 0 auto;
+        padding: 2rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15%;
+        padding-top: 5%;
+        min-height: 100vh;        
       }
 
       .intro-title {
@@ -65,14 +76,28 @@
       .intro-second-title,
       .intro-description,
       .description,
-      .social-links {
+      .social-links, .tech-stack {
         color: var(--slate);
+      }
+      
+      .intro-description {
+        margin: 1rem 0 0 0;
+      }
+
+      .description.subtitle {
+        color: var(--white);
+        font-size: 1.5em;
+        padding: 0;
+        margin: 2rem 0 0 0;
       }
 
       .intro-info-wrapper {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;        
+        /* padding-right: .5rem; */
+        margin-right: 1.5rem;
       }
 
       .intro-info {
@@ -86,18 +111,37 @@
 
       .fn-input {
         color: var(--green-bright);
+        font-weight: 600;
       }
 
-      .container {
-        /* margin: 0 auto;
-        padding: 2rem; */
+      
+
+      .main, .intro-description {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 15%;
-        padding-top: 5%;
-        min-height: 100vh;
-        max-width: 55%;
+        width: 55%;
+      }
+
+      .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 10px));
+        margin-left: -20px;
+        list-style: circle;
+      }
+
+      .contact-box {
+        margin: 2rem 0;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
       }
     </style>
   </head>
