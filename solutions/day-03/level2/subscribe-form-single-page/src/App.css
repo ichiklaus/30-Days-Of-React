@@ -57,6 +57,11 @@ body,
   padding: 0.25rem 0.45rem;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.821);
+  outline: none;
+}
+
+.subscribe__inputs > input[type=text]:focus {
+  border: 2px solid rgba(0, 0, 0, 0.587);
 }
 
 .subscribe__cta {
