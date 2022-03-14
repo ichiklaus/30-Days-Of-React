@@ -1,0 +1,44 @@
+@import "./App.css";
+@import "./Mobile.css";
+@import "./Variables.css";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-navy);
+  color: white;
+  font-family: -apple-system, BlinkMacºSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+* {
+  line-height: 1.75;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--green-bright);
+}
+
+a:hover {
+  color: var(--lightest-slate);
+}
+
+input::placeholder {
+  color: var(--dark-navy);
+  font-weight: 400;
+}
+
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
