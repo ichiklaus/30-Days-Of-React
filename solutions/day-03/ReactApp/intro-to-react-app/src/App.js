@@ -131,8 +131,6 @@ let main = () => {
 
 export default function App() {
     return (
-        // mainApp
         main()
     );
 };
-//export default App;
