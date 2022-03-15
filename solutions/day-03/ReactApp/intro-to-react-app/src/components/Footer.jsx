@@ -1,5 +1,3 @@
-import React from "react";
-
 // Footer
 let Footer = ({
   myInfo: {

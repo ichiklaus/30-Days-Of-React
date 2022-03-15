@@ -1,5 +1,3 @@
-import React from "react";
-
 let SubscribeButton = (ActionProps) => {
   return (
     <button className="button button--submit" type="button">

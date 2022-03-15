@@ -1,5 +1,3 @@
-import React from 'react';
-
 let HexaColor = () => {
     let str = '0123456789abcdef'
     let color = ''

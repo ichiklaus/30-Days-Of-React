@@ -1,4 +1,3 @@
-import React from "react";
 import nicolasjpg from "../images/me.jpg";
 
 const STARTING_DATE = "27 of february of 2022";

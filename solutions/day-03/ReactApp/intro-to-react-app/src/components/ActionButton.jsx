@@ -1,5 +1,3 @@
-import React from "react";
-
 let SayHi = (ActionProps) => {
   return (
     <button
