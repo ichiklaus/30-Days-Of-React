@@ -10,7 +10,7 @@ function App() {
 
   const myInfo = {
     author: {
-      username: "@ichiklaus",
+      username: "ichiklaus",
       firstname: "Nicolás",
       lastname: "Moreira",
     },
@@ -55,7 +55,9 @@ function App() {
           myInfo={myInfo}
         />
       </div>
-      <Footer />
+      <Footer 
+        myInfo={myInfo}
+      />
     </div>
   );
 }
