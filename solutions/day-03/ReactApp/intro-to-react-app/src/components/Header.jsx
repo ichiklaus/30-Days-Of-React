@@ -22,7 +22,7 @@ let Header = (headerProps) => {
       <div className="intro-info-wrapper">
         <small className="intro-info">{STARTING_DATE}</small>
         <small className="intro-info copyright">
-          {username} on all my social media{" "}
+          @{username} on all my social media{" "}
         </small>
       </div>
       <div className="intro-img-container">
