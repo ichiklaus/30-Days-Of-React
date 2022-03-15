@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Form() {
     return (
         <div className='subscribe__inputs'>
