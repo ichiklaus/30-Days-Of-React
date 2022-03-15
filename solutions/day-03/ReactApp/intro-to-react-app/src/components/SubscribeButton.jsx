@@ -1,9 +1,9 @@
 import React from "react";
 
-let SubscribeButton = () => {
+let SubscribeButton = (ActionProps) => {
   return (
     <button className="button button--submit" type="button">
-      Subscribe
+      {ActionProps.text}
     </button>
   );
 };

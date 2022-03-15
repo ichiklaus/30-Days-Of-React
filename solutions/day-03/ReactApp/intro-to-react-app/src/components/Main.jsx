@@ -3,13 +3,18 @@ import SubscribeButton from "./SubscribeButton";
 import HexaColor from "./HexaColor";
 import ActionButton from "./ActionButton";
 
+// Maps and formats the tech stack into list items
 let getTechsFormatted = (arr) => {
   return arr.map((item) => {
     return <li key={item}>{item}</li>;
   });
 };
 
+// For action buttons
 const actions = {
+  subscribe: {
+    text: "Subscribe",
+  },
   hiButton: {
     sayHi: function () {
       alert("Hi there! Welcome to my journal.");
@@ -24,7 +29,20 @@ const actions = {
   },
 };
 
-let Main = (mainProps) => {
+let Main = ({
+  myInfo: {
+    author: { firstname, lastname },
+    getCurrentAge,
+    techStack,
+  },
+}) => {
+  /** Destructuring props in a const for main component */
+  // const {
+  //   author: { firstname, lastname },
+  //   getCurrentAge,
+  //   techStack,
+  // } = mainProps.myInfo;
+
   return (
     <main>
       {/* Section about me */}
@@ -33,11 +51,10 @@ let Main = (mainProps) => {
           <h2>/ about me</h2>
         </div>
         <p className="intro-description">
-          My name's {mainProps.firstname} {mainProps.lastname},{" "}
-          {mainProps.getCurrentAge}. I'm currently working on my theses for my
-          degree in Computer Systems Engineering at Universidad Técnica de
-          Manabí of Portoviejo - Ecuador, while growing my career as a software
-          engineer in web development.
+          My name's {firstname} {lastname}, {getCurrentAge()}. I'm currently
+          working on my theses for my degree in Computer Systems Engineering at
+          Universidad Técnica de Manabí of Portoviejo - Ecuador, while growing
+          my career as a software engineer in web development.
         </p>
         <p className="intro-description">
           At some point I would like to design and develop videogames ever since
@@ -53,13 +70,14 @@ let Main = (mainProps) => {
         <p className="description intro-description">
           So far I've been learning and working with technologies such as:{" "}
         </p>
-        <ul className="tech-stack">{getTechsFormatted(mainProps.techStack)}</ul>
+        <ul className="tech-stack">{getTechsFormatted(techStack)}</ul>
       </section>
       <section className="contact-me-section intro-description">
         <div className="contact-box">
           {/* <label className="fn-input" htmlFor="email">Contact me </label> */}
           <input type="text" id="email" placeholder="mail@example.com"></input>
-          {SubscribeButton()}
+          {/* {SubscribeButton()} */}
+          <SubscribeButton text={actions.subscribe.text} />
         </div>
         <div>
           {/* {HexaColor()} */}

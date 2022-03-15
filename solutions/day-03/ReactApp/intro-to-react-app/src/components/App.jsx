@@ -34,22 +34,25 @@ function App() {
     ],
   };
 
-  console.log("🚀 ~ file: App.jsx ~ line 22 ~ App ~ status", myInfo.status());
+  // console.log("🚀 ~ file: App.jsx ~ line 22 ~ App ~ status", myInfo.status());
 
   return (
     <div className="App">
       <div className="content">
         <Header
-          welcome={welcomeSection.welcome}
-          username={myInfo.author.username}
-          country={myInfo.countryBasedOn}
+          // welcome={welcomeSection.welcome}
+          // username={myInfo.author.username}
+          // country={myInfo.countryBasedOn}
+          welcomeSection={welcomeSection}
+          myInfo={myInfo}
         />
         <Main
-          firstname={myInfo.author.firstname}
-          lastname={myInfo.author.lastname}
-          getCurrentAge={myInfo.getCurrentAge()}
-          status={myInfo.status()}
-          techStack={myInfo.techStack}
+          // firstname={myInfo.author.firstname}
+          // lastname={myInfo.author.lastname}
+          // getCurrentAge={myInfo.getCurrentAge()}
+          // status={myInfo.status()}
+          // techStack={myInfo.techStack}
+          myInfo={myInfo}
         />
       </div>
       <Footer />
