@@ -1,5 +1,3 @@
-import React from "react";
-
 let Main = ({ myInfo: { techStack } }) => {
   function asList(input) {
     return input.map((item) => (

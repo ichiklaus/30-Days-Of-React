@@ -1,4 +1,3 @@
-import React from "react";
 import nicolasjpeg from "../images/nicolas.jpeg";
 
 let Header = ({
