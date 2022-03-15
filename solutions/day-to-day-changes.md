@@ -24,6 +24,7 @@ I also worked on the CSS file.
 ## Day 05
 On day 05 I learnt about Props in functional components and worked on the ReactApp/intro-to-react-app (webapp name: My journey with React) adding Props to every component and passing strings, bools, numbers, and composed objects. I learnt 3 ways to destructure Props: by destructuring in single variables, by destructuring in one line, and by destructuring as a parameter.
 I also created additional components such as CTA buttons and fixed the layout for mobile.
+As a plus to catch up on exercises from day 04 and day 05 I refactored the code creating individual components, a common.js file that includes miscellaneous and other utils/variables, and using props in functional components, for the level2 and level3 problems.
 
 ## Day 06
 
