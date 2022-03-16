@@ -10,7 +10,7 @@ let Main = ({ myInfo: { techStack } }) => {
     <main>
       <div className="skills">
         <p>Technical Skills</p>
-        <ul className="skills__stack">{asList(techStack)}</ul>
+        <ul key="skill-stack" className="skills__stack">{asList(techStack)}</ul>
       </div>
     </main>
   );
