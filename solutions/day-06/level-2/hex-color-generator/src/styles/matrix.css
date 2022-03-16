@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 110px), 1fr));
+  grid-gap: 2px;
+  align-items: center; /* left and right */
+  justify-content: center; /* up and down */
+  max-width: 69vw;
+  height: auto;
+}
+
+.slot {
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.slot > p {
+  text-align: center;
+  color: black;
+  text-shadow: 1px 0px 10px white;
+}
