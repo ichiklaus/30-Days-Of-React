@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  grid-gap: 2px;
+  align-items: center; /* left and right */
+  justify-content: center; /* up and down */
+  max-width: 60vw;
+}
+
+.slot {
+  border: 1px solid white;
+  padding: 1rem;
+}
+
+.slot > p {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.odd-number {
+  background-color: rgb(202, 204, 80);
+}
+
+.even-number {
+  background-color: rgba(97, 199, 97, 0.897);
+}
+
+.prime-number {
+  background-color: rgba(255, 0, 0, 0.705);
+}

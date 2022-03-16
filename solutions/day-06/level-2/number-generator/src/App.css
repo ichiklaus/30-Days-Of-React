@@ -1,0 +1,24 @@
+@import "./styles/matrix.css";
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.App > h1 {
+    font-size: 3rem;
+}
