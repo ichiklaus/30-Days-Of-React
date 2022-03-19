@@ -30,20 +30,22 @@ class Header extends React.Component {
               all my social media
             </small>
           </div>
-          <div className="intro-img-container">
-            <img src={nicolasjpg} alt="Nicolás" className="intro-img" />
+          <div className="paragraph">
+            <div className="intro-img-container">
+              <img src={nicolasjpg} alt="Nicolás" className="intro-img" />
+            </div>
+            <h1 className="intro-title">
+              {/* Using destructured object to set inner HTML */}
+              Hallo! it's <span className="intro-name">{username}.</span>
+            </h1>
+            {/* Using states to set inner Html */}
+            <h2 className="intro-second-title">{this.state.welcometext}</h2>
+            <p>
+              {/* Using destructured object to set inner HTML */}
+              I'm a computer systems engineer based in {country} passionate and
+              fully interested in web development and UI/UX.
+            </p>
           </div>
-          <h1 className="intro-title">
-            {/* Using destructured object to set inner HTML */}
-            Hallo! it's <span className="intro-name">{username}.</span>
-          </h1>
-          {/* Using states to set inner Html */}
-          <h2 className="intro-second-title">{this.state.welcometext}</h2>
-          <p className="paragraph">
-            {/* Using destructured object to set inner HTML */}
-            I'm a computer systems engineer based in {country} passionate and
-            fully interested in web development and UI/UX.
-          </p>
         </header>
       </div>
     );
