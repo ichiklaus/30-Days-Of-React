@@ -21,31 +21,31 @@ class Header extends React.Component {
       country,
     } = this.props.myInfo;
     return (
-      <header>
-        <div className="header-wrapper">
+      <div className="header-wrapper">
+        <header>
           <div className="intro-info-wrapper">
             <small className="intro-info"> {STARTING_DATE} </small>
             <small className="intro-info copyright">
-              {/* Using destructured object to set inner HTML */}
-              @{username} on all my social media
+              {/* Using destructured object to set inner HTML */}@{username} on
+              all my social media
             </small>
           </div>
           <div className="intro-img-container">
             <img src={nicolasjpg} alt="Nicolás" className="intro-img" />
           </div>
           <h1 className="intro-title">
-              {/* Using destructured object to set inner HTML */}
+            {/* Using destructured object to set inner HTML */}
             Hallo! it's <span className="intro-name">{username}.</span>
           </h1>
           {/* Using states to set inner Html */}
           <h2 className="intro-second-title">{this.state.welcometext}</h2>
-          <p className="intro-description">
-              {/* Using destructured object to set inner HTML */}
+          <p className="paragraph">
+            {/* Using destructured object to set inner HTML */}
             I'm a computer systems engineer based in {country} passionate and
             fully interested in web development and UI/UX.
           </p>
-        </div>
-      </header>
+        </header>
+      </div>
     );
   }
 }
