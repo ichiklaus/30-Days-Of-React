@@ -45,3 +45,10 @@ On day 06 I learnt about mapping arrays and manipulate them when destructuring p
 This is useful to render lists especially, so instead of using `<p></p>` return `<li></li>` in the Child Component and return` <ul></ul>` in the parent component.
 
 The same principle can be applied to an array of objects, just dont forget that when passing the props in the child component it is: `( { mappedArray: { key(1), key(2), key(3)... key(n) } } )`
+
+## Day 07
+On day 07 I learnt about class-based components; though there're functional components since React v16.8.0, it's still good to learn about these in order to maintain legacy code or to update such code. In this section I just converted my functional-based components to class-based components while also learning to use Props from the constructor, and a bit about states.
+
+## Day 08
+On day 08 I learnt about states, which means the state of a component under a condition.
+Here are some components that change their states:
