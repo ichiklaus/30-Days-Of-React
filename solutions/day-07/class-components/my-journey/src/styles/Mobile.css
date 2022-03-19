@@ -1,13 +1,19 @@
 @media screen and (max-width: 480px) {
   .App,
   .main,
-  .intro-description {
+  .paragraph {
     margin: 0;
     padding: 0;
   }
 
   .App {
     padding: 7%;
+  }
+
+  .header-wrapper,
+  .main-wrapper {
+    padding-left: 0;
+    padding-top: 0;
   }
 
   .intro-info-wrapper {
@@ -28,7 +34,7 @@
     text-align: center;
   }
 
-  .intro-description {
+  .paragraph {
     max-width: 100vw;
   }
 
@@ -43,5 +49,31 @@
     align-items: center;
     justify-content: center;
     max-width: 100vw;
+  }
+
+  .aritmethic-box {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aritmethic-box > button {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 899px) {
+  .App, .header-wrapper, .main-wrapper {
+    padding: 5%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .paragraph {
+    max-width: 50vw;
   }
 }
