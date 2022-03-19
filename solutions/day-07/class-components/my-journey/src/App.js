@@ -5,6 +5,7 @@ import { welcomeSection, myInfo } from './services/common/common'
 import  actions from './services/utils/index';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
       />
       <Main 
         myInfo={myInfo}
-        // actions={actions}
+        actions={actions}
+      />
+      <Footer 
+        myInfo={myInfo}
       />
     </div>
   );
