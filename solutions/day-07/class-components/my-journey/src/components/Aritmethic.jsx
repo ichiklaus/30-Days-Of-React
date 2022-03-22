@@ -20,12 +20,11 @@ class Aritmethic extends React.Component {
   render() {
     return (
       <div className="action-center" id="change-states">
-        <h2 className="margin">
+        <h3 className="margin">
           Class-based CTA button component with stateful reset
-        </h2>
-
-        <div className="aritmethic-box margin">
-          <h3 className="">{this.state.count}</h3>
+        </h3>
+        <div className="aritmethic-box">
+          <p className="">{this.state.count}</p>
           <button className="button button--submit " onClick={this.addOne}>
             Add one
           </button>

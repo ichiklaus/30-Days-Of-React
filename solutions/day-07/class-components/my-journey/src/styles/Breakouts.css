@@ -16,12 +16,27 @@
     padding-top: 0;
   }
 
+  .intro-info-container {
+    width: 85vw;
+    position: static;
+  }
+
+  .intro-info-top {
+    position: static;
+  }
+
   .intro-info-wrapper {
     flex-flow: column wrap;
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 3rem;
     padding: 0;
+  }
+
+  .nav-wrapper {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
   }
 
   .intro-img-container {
@@ -36,6 +51,10 @@
 
   .paragraph {
     max-width: 100vw;
+  }
+
+  .section-header::after {
+    display: none;
   }
 
   .action-center {
@@ -63,6 +82,12 @@
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
+
+  #theme-toggler {
+    position: relative;
+    top: 5px;
+    left: -90%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 899px) {
@@ -70,6 +95,36 @@
     padding: 5%;
     margin: 0;
   }
+
+  .intro-info-container {
+    width: 85vw;
+    position: relative;
+  }
+
+  .intro-info-top {
+    position: relative;
+  }
+
+  .nav-wrapper {
+    flex-flow: row wrap;
+    justify-content: end;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    right: -8%;
+  }
+
+  .nav-wrapper > a:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  #theme-toggler {
+    left: 2%;
+  }
+
+  /* #side-navbar {
+    display: flex;
+    justify-content: flex-end;
+  } */
 }
 
 @media screen and (min-width: 900px) {

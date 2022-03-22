@@ -8,7 +8,7 @@ export const myInfo = {
         firstname: "Nicolás",
         lastname: "Moreira",
     },
-    countryBasedOn: "Ecuador",
+    countryBasedin: "Ecuador",
     getCurrentAge: function () {
         const yearBorn = 1994;
         const currentYear = new Date().getFullYear();

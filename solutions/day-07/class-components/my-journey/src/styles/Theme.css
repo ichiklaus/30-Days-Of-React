@@ -1,0 +1,134 @@
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --bg-color: var(--navy);
+    --text-color: var(--slate);
+    --title-color: var(--lightest-slate);
+    --second-title-color: var(--light-slate);
+    --accent-color: var(--green-bright);
+    --input-accent-color: white;
+    --input-bg-color: var(--light-navy);
+    --code-bg-color: var(--slate);
+    --element-color: var(--lightest-navy);
+    --button-bg-color: var(--navy);
+    --button-bg-color-hover: var(--lightest-navy);
+    --button-text-color-hover: var(--lightest-slate);
+    --button-accent-color: var(--green-bright);
+  }
+  body.light-theme {
+    --bg-color: white;
+    --text-color: var(--light-navy);
+    --title-color: var(--navy);
+    --second-title-color: var(--light-navy);
+    --accent-color: var(--gold-tint);
+    --input-accent-color: var(--navy);
+    --input-bg-color: white;
+    --code-bg-color: var(--lightest-slate);
+    --element-color: var(--lightest-navy);
+    --button-bg-color: var(--lightest-slate);
+    --button-bg-color-hover: var(--light-navy);
+    --button-text-color-hover: var(--lightest-slate);
+    --button-accent-color: var(--navy);
+  }
+
+  body,
+  body.light-theme {
+    transition: ease-out 200ms;
+    -webkit-transition: ease-out 200ms;
+    -moz-transition: ease-out 200ms;
+    -ms-transition: ease-out 200ms;
+    -o-transition: ease-out 200ms;
+  }
+}
+
+/* Element's colors */
+body {
+  background-color: var(--bg-color);
+}
+
+h2,
+h3,
+h4 {
+  color: var(--second-title-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+p,
+li,
+small,
+.social-links {
+  color: var(--text-color);
+}
+
+code {
+  background-color: var(--code-bg-color);
+  color: var(--title-color);
+}
+
+input {
+  background-color: var(--input-bg-color);
+  color: var(--input-accent-color);
+  caret-color: var(--button-accent-color);
+  border: 1px solid var(--button-accent-color);
+}
+
+input::placeholder {
+  color: var(--title-color);
+}
+
+/* By ID definition */
+#topics-section > h3 {
+  color: var(--second-title-color);
+}
+
+/* By Classname definition */
+.intro-name,
+.copyright {
+  color: var(--accent-color);
+}
+
+.intro-info {
+  color: var(--title-color);
+}
+
+.intro-title {
+  color: var(--title-color);
+}
+
+.intro-second-title {
+  color: var(--second-title-color);
+}
+
+.section-title {
+  color: var(--title-color);
+}
+
+.button--submit {
+  border: 1px solid var(--button-accent-color);
+  background-color: var(--button-bg-color);
+  color: var(--button-accent-color);
+}
+
+.button--submit:hover {
+  background-color: var(--button-bg-color-hover);
+  color: var(--button-text-color-hover);
+}
+.aritmethic-box > p {
+  border: 1px solid var(--element-color);
+  background-color: var(--input-bg-color);
+}
+
+.section-header::after {
+  background-color: var(--element-color);
+}
+
+.fa-sun {
+  color: var(--input-accent-color);
+}

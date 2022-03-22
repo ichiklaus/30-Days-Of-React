@@ -2,6 +2,7 @@ import React from "react";
 import TechsList from "./TechsList";
 import ActionButton from "./ActionButton";
 import Aritmethic from "./Aritmethic";
+import Pet from "./Pet";
 
 class Main extends React.Component {
   constructor(props) {
@@ -26,8 +27,8 @@ class Main extends React.Component {
         <main>
           {/* Section about me */}
           <section id="about-me-section">
-            <div id="about-me-header" className="section-title">
-              <h2>/ about me</h2>
+            <div id="about-me-header" className="section-header">
+              <h2 className="section-title" >/ about me</h2>
             </div>
             <p className="paragraph">
               My name's {firstname} {lastname}, {getCurrentAge()}. I'm currently
@@ -62,8 +63,8 @@ class Main extends React.Component {
             </div>
           </section>
           <section id="topics-section">
-            <div id="topics-header" className="section-title">
-              <h2>/ my 30 days of React journey</h2>
+            <div id="topics-header" className="section-header">
+              <h2 className="section-title">/ my 30 days of React journey</h2>
             </div>
             <h3>## Day-01</h3>
             <p className="paragraph">
@@ -184,17 +185,20 @@ return (<div>mappedArray<div>);`}
               their states:
             </p>
             <div id="stateful-components" className="action-center margin">
-              <h2>Class-based CTA buttons components with props arguments</h2>
+              <h3>Class-based CTA buttons components with props arguments</h3>
               <div>
                 <ActionButton actions={hiButton.sayHi} text={hiButton.text} />
               </div>
+              
               <div>
                 <ActionButton
                   actions={datetimeButton.showTime}
                   text={datetimeButton.text}
                 />
-              </div>
-              <Aritmethic />
+              </div>              
+                <Aritmethic />
+              
+              <Pet />
             </div>
           </section>
         </main>

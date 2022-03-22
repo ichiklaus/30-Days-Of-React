@@ -16,15 +16,43 @@ footer {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  /* background-color: var(--lightest-slate); */
 }
 
 code {
   font-size: 0.75rem;
-  background-color: var(--slate);
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
   font-weight: 800;
   display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: ease-in 100ms;
+  -webkit-transition: ease-in 100ms;
+  -moz-transition: ease-in 100ms;
+  -ms-transition: ease-in 100ms;
+  -o-transition: ease-in 100ms;
+}
+
+input {
+  margin: 1rem 0;
+  outline: none;
+  padding: 0.45rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+}
+
+.social-links {
+  font-size: 1rem;
 }
 
 .App {
@@ -48,6 +76,17 @@ code {
   display: flex;
 }
 
+.img-container {
+  display: flex;
+  max-width: 300px;
+  height: auto;
+}
+
+.img-element {
+  max-width: 100%;
+  height: auto;
+}
+
 .intro-img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -61,26 +100,49 @@ code {
 }
 
 .intro-title {
-  font-size: 3em;
+  font-size: 4em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.intro-name {
-  color: var(--green-bright);
+.intro-second-title {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.intro-second-title,
-.paragraph,
-.description,
-.social-links,
-.tech-stack {
-  color: var(--slate);
+.nav-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 15%;
+  position: relative;
+  margin-top: 1rem;
+  right: 50px;
 }
 
-.description.subtitle {
-  color: var(--white);
-  font-size: 1.5em;
-  padding: 0;
-  margin: 2rem 0 0 0;
+.nav-wrapper > a {
+  text-align: right;
+  margin-bottom: .30rem;
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-wrapper > a:hover {
+  text-decoration: none;
+  color: var(--button-text-color-hover);
+}
+
+.intro-info-container {
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+}
+
+.intro-info-top {
+  position: fixed;
+  top: 10%;
+  right: 0;
 }
 
 .intro-info-wrapper {
@@ -90,15 +152,17 @@ code {
   align-items: flex-end;
   padding-right: 2rem;
   max-width: 100%;
+  
+}
+
+#theme-toggler {
+  position: fixed;
+  top: 40px;
+  right: 2%;
 }
 
 .intro-info {
-  color: var(--light-slate);
   font-weight: bolder;
-}
-
-.copyright {
-  color: var(--green-bright);
 }
 
 .fn-input {
@@ -111,24 +175,24 @@ code {
   margin: 1rem 0 0 0;
 }
 
-.section-title {
+.section-header {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  height: 10vh;
 }
 
-.section-title > h2 {
-  font-size: 42px;
-  display: inline;
+.section-title {
+  font-size: 46px;
 }
 
-.section-title::after {
+.section-header::after {
   content: "";
   display: block;
   width: 300px;
-  margin-top: 39px;
+  margin-top: 10px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--lightest-navy);
 }
 
 .tech-stack {
@@ -156,27 +220,6 @@ code {
   font-size: 1.5rem;
 }
 
-.contact-box > input {
-  margin: 1rem 0;
-  outline: none;
-  padding: 0.45rem 1rem;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border: 1px solid var(--green-bright);
-  background-color: var(--light-navy);
-  color: var(--white);
-  caret-color: var(--green-bright);
-  font-size: 16px;
-  width: 70%;
-}
-
-.contact-box > input::placeholder {
-  color: var(--lightest-slate);
-}
-
 .button {
   padding: 0.75rem 3rem;
   font-size: 1.1rem;
@@ -199,15 +242,7 @@ code {
   margin-top: 2rem;
 }
 
-.button--submit {
-  border: 1px solid var(--green-bright);
-  background-color: var(--navy);
-  color: var(--green-bright);
-}
-
 .button--submit:hover {
-  background-color: var(--lightest-navy);
-  color: var(--lightest-slate);
   transition: ease-out 200ms;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
@@ -248,13 +283,8 @@ code {
   margin-right: 0.75rem;
 }
 
-.aritmethic-box > h3 {
+.aritmethic-box > p {
   margin-right: 2rem;
-}
-
-.aritmethic-box > h3 {
-  border: 1px solid var(--lightest-navy);
-  background-color: var(--light-navy);
   padding: 0.45rem 3rem;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -264,11 +294,20 @@ code {
 }
 
 #topics-section > h3 {
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
 }
 
 .footer-wrap {
   width: 100%;
   /* position: fixed; */
   bottom: 0px;
+}
+
+#theme-toggler:hover {
+  cursor: pointer;
+}
+
+.fas {
+  margin-bottom: .75rem;
 }

@@ -12,8 +12,8 @@ export default class Footer extends React.Component {
     return (
       <div className="footer-wrap">
         <footer>
-          <small className="social-links">
-            @{this.state.username} on
+          <span className="social-links">
+            <span className="copyright">@{this.state.username}</span> on
             <a
               href={`http://Instagram.com/${this.state.username}`}
               target="_blank"
@@ -40,7 +40,7 @@ export default class Footer extends React.Component {
               {" "}
               Frontend Mentor
             </a>
-          </small>
+          </span>
         </footer>
       </div>
     );

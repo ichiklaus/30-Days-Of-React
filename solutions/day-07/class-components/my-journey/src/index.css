@@ -2,36 +2,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--navy);
-  color: white;
   font-family: "NTR", -apple-system, BlinkMacºSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
 * {
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-code {
-  margin: 0;
-  padding: 0;
-  color: var(--lightest-slate);
-}
-
-a {
-  text-decoration: none;
-  color: var(--green-bright);
-}
-
-a:hover {
-  color: var(--lightest-slate);
-}
-
-input::placeholder {
-  color: var(--dark-navy);
-  font-weight: 400;
+  line-height: 1.3;
 }
