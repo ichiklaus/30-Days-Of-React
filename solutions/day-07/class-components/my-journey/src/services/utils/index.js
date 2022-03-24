@@ -1,19 +1,19 @@
 const actions = {
-    subscribe: {
-      text: "Subscribe",
+  subscribe: {
+    text: "Subscribe",
+  },
+  hiButton: {
+    sayHi: function () {
+      alert("Hi there! Welcome to my journal.");
     },
-    hiButton: {
-      sayHi: function () {
-        alert("Hi there! Welcome to my journal.");
-      },
-      text: "Say hi",
+    text: "Say hi",
+  },
+  datetimeButton: {
+    showTime: function () {
+      alert(new Date());
     },
-    datetimeButton: {
-      showTime: function () {
-        alert(new Date());
-      },
-      text: "Show datetime",
-    },
-  };
+    text: "Show datetime",
+  },
+};
 
-  export default actions;
+export default actions;

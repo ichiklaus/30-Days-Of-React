@@ -51,6 +51,19 @@ input {
   width: 70%;
 }
 
+.login-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-message {
+  text-align: center;
+  color: var(--accent-color);
+}
+
 .social-links {
   font-size: 1rem;
 }
@@ -59,6 +72,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* justify-content: center; */
   min-height: 100vh;
 }
 

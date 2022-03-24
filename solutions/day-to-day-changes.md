@@ -51,4 +51,4 @@ On day 07 I learnt about class-based components; though there're functional comp
 
 ## Day 08
 On day 08 I learnt about states, which means the state of a component under a condition.
-Here are some components that change their states:
+Using states I created a theme toggler between light and dark mode. I tried implementing it using matchmedia to match the prefered theme and use toggle from classList but I couldn't get the status to update correctly in order to update the FAS Icon, so the approach I took was to return a themeSatus to add and remove classes depending on the theme current status.
