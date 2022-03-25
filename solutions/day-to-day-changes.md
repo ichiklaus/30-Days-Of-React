@@ -52,3 +52,10 @@ On day 07 I learnt about class-based components; though there're functional comp
 ## Day 08
 On day 08 I learnt about states, which means the state of a component under a condition.
 Using states I created a theme toggler between light and dark mode. I tried implementing it using matchmedia to match the prefered theme and use toggle from classList but I couldn't get the status to update correctly in order to update the FAS Icon, so the approach I took was to return a themeSatus to add and remove classes depending on the theme current status.
+
+## Day 09
+On day 09 it was about conditionally rendering React components. I created a Login/Logout text-based state which displays the correct message wether the user logs in or out of the application. Similarly, I created a show datetime button off the alert() function button created on previous days.
+
+## Day 10
+On day 10 it was about learning to structure the project; theres not one way to do so, so I base it off the structure by https://www.devaradise.com  and by https://www.xenonstack.com/insights/reactjs-project-structure. 
+On this day I could learn about fragments which are a react component which is useful when rendering a child component and it avoids creating another DOM parent node (like you know you have to wrap multiple elements in a div) so with <Fragment></Fragment> or simply <></>, you can wrap those child elements from a <ul></ul> or a <td></td>.
