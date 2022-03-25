@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -19,7 +23,7 @@ footer {
 }
 
 code {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
   font-weight: 800;
   display: inline-block;
@@ -30,7 +34,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   transition: ease-in 100ms;
   -webkit-transition: ease-in 100ms;
   -moz-transition: ease-in 100ms;
@@ -56,9 +59,9 @@ input {
   flex-flow: column wrap;
   /* gap: 20px; */
   row-gap: 10px;
-  position: absolute;
-  left: 1%;
-  top: 0; 
+  position: fixed;
+  right: 1%;
+  top: 20%; 
 }
 
 .action-wrapper > .button.margin:last-child {
@@ -89,8 +92,8 @@ input {
 
 .display-datetime {
   position: fixed;
-  right: 2%;
-  top: 20%;
+  right: 2.5%;
+  top: 37%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -104,6 +107,10 @@ input {
 
 .social-links {
   font-size: 1rem;
+}
+
+ .social-links > a:hover {
+  text-decoration: underline;
 }
 
 .App {
@@ -181,7 +188,6 @@ input {
 }
 
 .nav-wrapper > a:hover {
-  text-decoration: none;
   color: var(--button-text-color-hover);
 }
 
@@ -255,7 +261,7 @@ input {
 }
 
 .tech-stack > li::before {
-  content: url(images/icon-check.svg);
+  content: url(../images/icon-check.svg);
   margin-left: -1rem;
   margin-right: 0.5rem;
 }

@@ -133,3 +133,12 @@ input::placeholder {
 .fa-sun {
   color: var(--input-accent-color);
 }
+
+
+.paragraph > span > a {
+  color: var(--accent-color);
+}
+
+.paragraph > span > a:hover {
+  color: var(--text-color);
+}

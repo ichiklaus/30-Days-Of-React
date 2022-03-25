@@ -138,18 +138,47 @@ class Journal extends React.Component {
           </div>
           <Aritmethic />
           <Pet />
-          <h3>Theme toggler</h3>
-          <p className="paragraph">
-            Using states I created a theme toggler between light and dark mode.
-            I tried implementing it using matchmedia to match the prefered theme
-            and use toggle from classList but I couldn't get the status to
-            update correctly in order to update the FAS Icon, so the approach I
-            took was to return a themeSatus to add and remove classes depending
-            on the theme current status.
-          </p>
-          <h3>## Day-09</h3>
-          <h4>Conditional rendering</h4>
         </div>
+        <h4>Theme toggler</h4>
+        <p className="paragraph">
+          Using states I created a theme toggler between light and dark mode. I
+          tried implementing it using matchmedia to match the prefered theme and
+          use toggle from classList but I couldn't get the status to update
+          correctly in order to update the FAS Icon, so the approach I took was
+          to return a themeSatus to add and remove classes depending on the
+          theme current status.
+        </p>
+        <h3>## Day-09</h3>
+        {/* <h4>Conditional rendering</h4> */}
+        <p className="paragraph">
+          On day 09 it was about conditionally rendering React components. I
+          created a Login/Logout text-based state which displays the correct
+          message wether the user logs in or out of the application. Similarly,
+          I created a show datetime button off the {"alert()"} function button
+          created on previous days.
+        </p>
+        <h3>## Day-10</h3>
+        <p className="paragraph">
+          <span>
+            On day 10 it was about learning to structure the project; theres not
+            one way to do so, so I base it off the structure by {" "}
+            <a href="https://www.devaradise.com/react-project-folder-structure">
+              React Project Structure Best Practices for Scalable Application
+            </a>{" "}
+            and by {" "}
+            <a href="https://www.xenonstack.com/insights/reactjs-project-structure">
+              Understanding ReactJs Project Structure and Folder Setups
+            </a>
+            . On this day I could learn about fragments which are a react
+            component which is useful when rendering a child component and it
+            avoids creating another DOM parent node{" "}
+            {"(like you know you have to wrap multiple elements in a div)"} so
+            with <code>{"<Fragment></Fragment>"}</code>
+            or simply <code>{"<></>"}</code>, you can wrap those child elements
+            from a <code>{"<ul></ul>"}</code>
+            or a <code>{"<td></td>"}</code> .
+          </span>
+        </p>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
-import TechsList from "./TechsList";
-import ActionButton from "./ActionButton";
-import Journal from "./Journal";
+import TechsList from "../components/TechsList";
+import ActionButton from "../components/ActionButton";
+import Journal from "../components/Journal";
 
 class Main extends React.Component {
   // constructor(props) {

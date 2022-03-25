@@ -1,6 +1,6 @@
 import React from "react";
 import nicolasjpg from "../images/me.jpg";
-import { myInfo } from "../services/common/common";
+import { myInfo } from "../utils/MyInfo";
 
 const STARTING_DATE = "27 of february of 2022";
 
@@ -160,7 +160,7 @@ class Header extends React.Component {
             </div>
             <nav id="side-navbar">
               <div className="nav-wrapper">
-                <a href="#home">/home</a>
+                <a href="#home" return false>/home</a>
                 <a href="#about-me-section">/about</a>
                 <a href="#topics-section">/journal</a>
               </div>
