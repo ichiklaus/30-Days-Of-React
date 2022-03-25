@@ -51,12 +51,50 @@ input {
   width: 70%;
 }
 
+.action-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  /* gap: 20px; */
+  row-gap: 10px;
+  position: absolute;
+  left: 1%;
+  top: 0; 
+}
+
+.action-wrapper > .button.margin:last-child {
+  margin: 0;
+}
+
 .login-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+#login-message {
+  margin-bottom: 4rem;
+  position: relative;
+  left: -10%;
+  display: flex;
+  /* white-space: nowrap; */
+  width: 350px;
+  height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+
+.display-datetime {
+  position: fixed;
+  right: 2%;
+  top: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-message {
@@ -205,7 +243,7 @@ input {
   display: block;
   width: 300px;
   margin-top: 10px;
-  height: 1px;
+  /* height: 1px; */
   margin-left: 20px;
 }
 
