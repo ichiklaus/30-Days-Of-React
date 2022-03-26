@@ -38,15 +38,15 @@ class Header extends React.Component {
     this.setState({
       loggedIn: !this.state.loggedIn,
     });
-    console.log(
-      "🚀 ~ file: App.js ~ line 22 ~ App ~ this.state.loggedIn",
-      this.state.loggedIn
-    );
+    // console.log(
+    //   "🚀 ~ file: App.js ~ line 22 ~ App ~ this.state.loggedIn",
+    //   this.state.loggedIn
+    // );
   };
 
   // Displays current state for login handler
   Status = () => {
-    return this.state.loggedIn ? (
+    return this.state.loggedIn === ""? (
       <h3 className="welcome-message">
         Welcome to my 30 days of React journey
       </h3>
@@ -125,7 +125,7 @@ class Header extends React.Component {
           <div className="action-wrapper">
             <this.ActionButton text={loggedInText} actions={this.handleLogin} />
             <this.ActionButton
-              text={`Show time`}
+              text={`Show Date`}
               actions={this.datetimeHandler}
             />
           </div>
@@ -160,7 +160,7 @@ class Header extends React.Component {
             </div>
             <nav id="side-navbar">
               <div className="nav-wrapper">
-                <a href="#home" return false>/home</a>
+                <a href="#home">/home</a>
                 <a href="#about-me-section">/about</a>
                 <a href="#topics-section">/journal</a>
               </div>

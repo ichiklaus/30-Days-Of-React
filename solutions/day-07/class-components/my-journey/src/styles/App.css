@@ -54,6 +54,14 @@ input {
   width: 70%;
 }
 
+form {
+  color: var(--text-color);
+}
+
+label {
+  color: var(--title-color);
+}
+
 .action-wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -318,6 +326,7 @@ input {
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 
 .action-center > div > h2,

@@ -59,3 +59,6 @@ On day 09 it was about conditionally rendering React components. I created a Log
 ## Day 10
 On day 10 it was about learning to structure the project; theres not one way to do so, so I base it off the structure by https://www.devaradise.com  and by https://www.xenonstack.com/insights/reactjs-project-structure. 
 On this day I could learn about fragments which are a react component which is useful when rendering a child component and it avoids creating another DOM parent node (like you know you have to wrap multiple elements in a div) so with <Fragment></Fragment> or simply <></>, you can wrap those child elements from a <ul></ul> or a <td></td>.
+
+## Day 11
+On day 11 I look into event handlers; since there is a vast diversity of JS events I only practiced with some of the most commonly used. Using states I could log the changes ocurring when an event happens. I did some practice which is shown below:

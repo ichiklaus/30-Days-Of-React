@@ -2,6 +2,8 @@ import React from "react";
 import Aritmethic from "./Aritmethic";
 import Pet from "./Pet";
 import ActionButton from "./ActionButton";
+import Events from "./Events";
+import OnMouseEnter from "./OnMouseEnter";
 
 class Journal extends React.Component {
   render() {
@@ -125,7 +127,10 @@ class Journal extends React.Component {
           On day 08 I learnt about states, which means the state of a component
           under a condition. Here are some components that change their states:
         </p>
-        <div id="stateful-components" className="action-center margin">
+        <div
+          id="stateful-components"
+          className="action-center margin paragraph"
+        >
           <h3>Class-based CTA buttons components with props arguments</h3>
           <div>
             <ActionButton actions={hiButton.sayHi} text={hiButton.text} />
@@ -161,11 +166,11 @@ class Journal extends React.Component {
         <p className="paragraph">
           <span>
             On day 10 it was about learning to structure the project; theres not
-            one way to do so, so I base it off the structure by {" "}
+            one way to do so, so I base it off the structure by{" "}
             <a href="https://www.devaradise.com/react-project-folder-structure">
               React Project Structure Best Practices for Scalable Application
             </a>{" "}
-            and by {" "}
+            and by{" "}
             <a href="https://www.xenonstack.com/insights/reactjs-project-structure">
               Understanding ReactJs Project Structure and Folder Setups
             </a>
@@ -179,6 +184,16 @@ class Journal extends React.Component {
             or a <code>{"<td></td>"}</code> .
           </span>
         </p>
+        <h3>## Day-11</h3>
+        <p className="paragraph">
+          On day 11 I look into event handlers; since there is a vast diversity
+          of JS events I only practiced with some of the most commonly used.
+          Using states I could log the changes ocurring when an event happens. I
+          did some practice which is shown below:
+        </p>
+        <Events />
+        <h4>Exercise solution for day 11: Random position on mouse enters</h4>
+        <OnMouseEnter />
       </div>
     );
   }
