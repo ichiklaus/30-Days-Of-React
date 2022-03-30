@@ -10,6 +10,18 @@
     padding: 7%;
   }
 
+  .action-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 10px;
+    position: relative;
+  }
+
+  .display-datetime {
+    position: absolute;
+    right: 8%;
+  }
+
   .header-wrapper,
   .main-wrapper {
     padding-left: 0;
@@ -88,10 +100,23 @@
     top: 5px;
     left: -90%;
   }
+
+  .flex.events {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .form-wrapper,
+  .exercise-container {
+    width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 899px) {
-  .App, .header-wrapper, .main-wrapper {
+  .App,
+  .header-wrapper,
+  .main-wrapper {
     padding: 5%;
     margin: 0;
   }

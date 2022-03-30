@@ -88,7 +88,8 @@ export default class Events extends Component {
         <h4>Events in React</h4>
         <form
           onSubmit={this.handleSubmit}
-          style={{ display: "flex", alignItems: "center" }}
+          // style={{ display: "flex", alignItems: "center" }}
+          className="flex events"
         >
           <div>
             <label htmlFor="firstname">Firstname: </label>
@@ -98,7 +99,7 @@ export default class Events extends Component {
               value={this.state.value}
             />
           </div>
-          <button className={`button button--submit margin`} type="submit">
+          <button className={`button button--submit`} type="submit">
             Submit
           </button>
         </form>

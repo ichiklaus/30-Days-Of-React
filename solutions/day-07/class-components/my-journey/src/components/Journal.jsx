@@ -4,6 +4,8 @@ import Pet from "./Pet";
 import ActionButton from "./ActionButton";
 import Events from "./Events";
 import OnMouseEnter from "./OnMouseEnter";
+import Form from "./Form";
+import FormPP from "./FormPP";
 
 class Journal extends React.Component {
   render() {
@@ -194,6 +196,9 @@ class Journal extends React.Component {
         <Events />
         <h4>Exercise solution for day 11: Random position on mouse enters</h4>
         <OnMouseEnter />
+        <h3>## Day-12</h3>
+        <Form />
+        <FormPP />
       </div>
     );
   }
