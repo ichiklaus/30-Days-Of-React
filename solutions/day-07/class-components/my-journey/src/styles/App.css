@@ -13,6 +13,7 @@ html {
 body {
   font-size: 18px;
   font-weight: 500;
+  text-align: justify;
 }
 
 main {
@@ -31,7 +32,6 @@ footer {
 }
 
 code {
-  font-size: 0.7rem;
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
   font-weight: 800;
   display: inline-block;
@@ -317,7 +317,7 @@ label {
 }
 
 .button.margin,
-.margin {
+.margin, div.margin {
   margin-top: 2rem;
 }
 
@@ -332,6 +332,11 @@ label {
 .code-block {
   margin-top: 0.75rem;
   white-space: pre-wrap;
+}
+
+.fs-sm {
+  text-align: left;
+  font-size: 0.7rem;
 }
 
 .action-center {
@@ -419,6 +424,7 @@ label {
   flex-flow: column wrap;
   align-items: center;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 .form-group.skills,

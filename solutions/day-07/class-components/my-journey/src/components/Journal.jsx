@@ -68,19 +68,19 @@ class Journal extends React.Component {
           component props and destructuring while creating html elements to
           contain each element in the array.
         </p>
-        <code className="code-block">
+        <code className="code-block fs-sm">
           {`const mappedArray = arrayToMap.map( element => ( <tag>{element}</tag> ));
-                return (<div>mappedArray</div>);`}
+return (<div>mappedArray</div>);`}
         </code>
         <p className="paragraph">
           <span>
             Note: mappedArray is the destructured Object Prop{" "}
             <span>
-              <code>{`(Component({ mappedArray })`}</code>
+              <code className="fs-sm">{`(Component({ mappedArray })`}</code>
             </span>{" "}
             Where
             <span>
-              <code>arrayToMap</code>
+              <code className="fs-sm">arrayToMap</code>
             </span>{" "}
             is the component.
           </span>
@@ -89,30 +89,37 @@ class Journal extends React.Component {
           To map an array of arrays it's done by creating a component for the
           array variable, like:
         </p>
-        <code className="code-block">
+        <code className="code-block fs-sm">
           {`const mappedArray = arrayToMap.map( element => ( </ChildComponent element={element}>));
-                return (<div>mappedArray<div>);`}
+return (<div>mappedArray<div>);`}
         </code>
         <p className="paragraph">
-          Then we render the created Child Component (ChildComponent) as
-          follows:
+          <span>
+            Then we render the created Child Component (ChildComponent) as
+            follows:{" "}
+            <code className="fs-sm">{`ChildComponent({ mappedArray: [ key(m), key(n) ] })`}</code>
+          </span>
         </p>
-        <code>{`ChildComponent({ mappedArray: [ key(m), key(n) ] })`}</code>
-        <p className="paragraph">And lastly, we return the component:</p>
-        <code>{`return (<p>{m}</p> <p>{n}</p>);`}</code>
+        <p className="paragraph">
+          <span>
+            And lastly, we return the component:{" "}
+            <code className="fs-sm">{`return (<p>{m}</p> <p>{n}</p>);`}</code>
+          </span>
+        </p>
         <p className="paragraph">
           <span>
             This is useful to render lists especially, so instead of using{" "}
-            <code>{`<p></p>`}</code> return <code>{`<li></li>`}</code> in the
-            Child Component and return <code>{`<ul></ul>`}</code> in the parent
-            component.
+            <code className="fs-sm">{`<p></p>`}</code> return{" "}
+            <code className="fs-sm">{`<li></li>`}</code> in the Child Component
+            and return <code className="fs-sm">{`<ul></ul>`}</code> in the
+            parent component.
           </span>
         </p>
         <p className="paragraph">
           <span>
             The same principle can be applied to an array of objects, just dont
             forget that when passing the props in the child component it is:{" "}
-            <code>{`({ mappedArray: { key(1), key(2), key(3)... key(n) }})`}</code>
+            <code className="fs-sm">{`({ mappedArray: { key(1), key(2), key(3)... key(n) }})`}</code>
           </span>
         </p>
         <h3>## Day-07</h3>
@@ -180,10 +187,11 @@ class Journal extends React.Component {
             component which is useful when rendering a child component and it
             avoids creating another DOM parent node{" "}
             {"(like you know you have to wrap multiple elements in a div)"} so
-            with <code>{"<Fragment></Fragment>"}</code>
-            or simply <code>{"<></>"}</code>, you can wrap those child elements
-            from a <code>{"<ul></ul>"}</code>
-            or a <code>{"<td></td>"}</code> .
+            with <code className="fs-sm">{"<Fragment></Fragment>"}</code>
+            or simply <code className="fs-sm">{"<></>"}</code>, you can wrap
+            those child elements from a{" "}
+            <code className="fs-sm">{"<ul></ul>"}</code>
+            or a <code className="fs-sm">{"<td></td>"}</code> .
           </span>
         </p>
         <h3>## Day-11</h3>

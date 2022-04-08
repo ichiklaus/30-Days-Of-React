@@ -28,6 +28,8 @@ const selectOptions = options.map(({ value, label }) => (
 ));
 
 class FormPP extends Component {
+  lastnameRef = React.createRef();
+
   state = {
     firstname: "",
     lastname: "",
@@ -44,6 +46,10 @@ class FormPP extends Component {
       html: false,
       css: false,
       javascript: false,
+    },
+    touched: {
+      firstname: false,
+      lastname: false,
     },
   };
 
@@ -64,6 +70,29 @@ class FormPP extends Component {
     }
   };
 
+  onBlurHandler = (event) => {
+    const { name } = event.target;
+    this.setState({
+      touched: { ...this.state.touched, [name]: true },
+    });
+    console.log(event.target);
+  };
+
+  validate = () => {
+    // Object to collect error feedback and to display on the form
+    const errors = {
+      firstName: '',
+    }
+
+    if (
+      (this.state.touched.firstname && this.state.firstname.length < 3) ||
+      (this.state.touched.firstname && this.state.firstname.length > 12)
+    ) {
+      errors.firstName = 'First name must be between 2 and 12'
+    }
+    return errors
+  }
+
   onSubmitHandler = (event) => {
     event.preventDefault();
     const {
@@ -83,6 +112,7 @@ class FormPP extends Component {
 
     const formattedSkills = [];
     for (const key in skills) {
+      console.log(key);
       if (skills[key]) {
         formattedSkills.push(key.toUpperCase);
       }
@@ -103,6 +133,8 @@ class FormPP extends Component {
       skills: formattedSkills,
     };
     console.log(data);
+    console.log(this.validate());
+    console.log(`status of createRef for lastname: ${this.lastnameRef.current.value}`);
   };
 
   render() {
@@ -133,8 +165,9 @@ class FormPP extends Component {
                 id=""
                 value={firstname}
                 onChange={this.onChangehandler}
+                onBlur={this.onBlurHandler}
                 placeholder={"Firstname"}
-              />
+                />
             </div>
             {/* Input text for lastname */}
             <div className="form-group">
@@ -145,6 +178,8 @@ class FormPP extends Component {
                 id=""
                 value={lastname}
                 onChange={this.onChangehandler}
+                // onBlur={this.onBlurHandler}
+                ref={this.lastnameRef}
                 placeholder={"Lastname"}
               />
             </div>
@@ -199,7 +234,8 @@ class FormPP extends Component {
             {/* Input color for favourite colour */}
             <div className="form-group">
               <label htmlFor="favourite-color">Favourite Colour</label>
-              <input className="fav-color"
+              <input
+                className="fav-color"
                 type="color"
                 name="favourite-color"
                 id="favcolor"
@@ -306,9 +342,8 @@ class FormPP extends Component {
               ></textarea>
             </div>
             {/* Input for File upload */}
-            <div className="form-group">
-              
-              <input 
+            <div className="form-group margin">
+              <input
                 type="file"
                 name="file"
                 id="file"
@@ -316,7 +351,7 @@ class FormPP extends Component {
               />
             </div>
             <div>
-              <button className="button button--submit" type="submit">
+              <button className="button button--submit margin" type="submit">
                 Submit
               </button>
             </div>

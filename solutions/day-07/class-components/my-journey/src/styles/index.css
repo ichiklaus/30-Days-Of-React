@@ -2,9 +2,16 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "NTR", -apple-system, BlinkMacºSystemFont, "Segoe UI", "Roboto",
+  /*font-family: "NTR", -apple-system, BlinkMacºSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif;*/
+}
+
+@font-face {
+  font-family: "NTR";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/public/fonts/NTR-Regular.ttf") format("truetype");
 }
 
 * {

@@ -7,9 +7,12 @@ export default class OnMouseEnter extends Component {
     this.state = {
       message: "",
       p: {
+        position: "",
+        top: "",
+        left: "",
         border: "1px solid var(--accent-color)",
         width: "80px",
-        textAlign: "center",
+        textAlign: "",
       },
     };
   }

@@ -26,7 +26,7 @@ class Form extends Component {
           <div className="form-wrapper">
             <h3>Add student</h3>
             <form onSubmit={this.onSubmitHandler}>
-              <div>
+              <div className="form-group">
                 <input
                   type="text"
                   name="firstname"
@@ -35,7 +35,7 @@ class Form extends Component {
                   onChange={this.onChangeHandler}
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <input
                   type="text"
                   name="lastname"
@@ -44,7 +44,7 @@ class Form extends Component {
                   onChange={this.onChangeHandler}
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <input
                   type="text"
                   name="country"
@@ -53,7 +53,7 @@ class Form extends Component {
                   onChange={this.onChangeHandler}
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <input
                   type="text"
                   name="title"
