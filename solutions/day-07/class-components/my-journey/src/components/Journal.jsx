@@ -6,6 +6,7 @@ import Events from "./Events";
 import OnMouseEnter from "./OnMouseEnter";
 import Form from "./Form";
 import FormPP from "./FormPP";
+import Countries from "./Countries";
 
 class Journal extends React.Component {
   render() {
@@ -207,6 +208,44 @@ return (<div>mappedArray<div>);`}
         <h3>## Day-12</h3>
         <Form />
         <FormPP />
+        <h3>## Day-13</h3>
+        <p className="paragraph">
+          Day 13 was about controlled vs uncontrolled forms. I kinda grasped the
+          concept of uncontrolled forms and the use of refs using createRef() in
+          class-based components, though it is not advised to use refs to
+          manipulate data (as I understood); it's just useful when working on
+          animations, or anything not data-related.
+        </p>
+        <p className="paragraph">
+          To practice form handling I completed a challenge from Frontend
+          Mentor:{" "}
+          <a
+            href="https://www.frontendmentor.io/solutions/signup-form-with-react-reactbootstrap-bootstrap-parcel-bundler-ByYYDOsQq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Signup Form with React, React-Bootstrap, Bootstrap, bundled with
+            Parcel
+          </a>{" "}
+        </p>
+        <h3>## Day-14</h3>
+        <p className="paragraph">
+          On day 14 I'm learning about component lifecycles. So far I understand
+          their order of render, and that getDerivedStateFromProps is{" "}
+          <em>
+            "used to alter the state of this.state with properties from props"
+          </em>{" "}
+          so, we pass props from the parent component into the child component
+          and it is then rendered through getDerivedState ; componentDidMount on
+          the other hand,
+          <em>updates</em> the component: the method is called after the
+          component is rendered through{" "}
+          <span>
+            <code className="code-block fs-sm">render();</code>.
+          </span>
+        </p>
+        <h4>API fetching with componentDidMount Cycle</h4>
+        <Countries />
       </div>
     );
   }
