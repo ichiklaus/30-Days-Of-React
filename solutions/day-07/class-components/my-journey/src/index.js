@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "@fontsource/ntr";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

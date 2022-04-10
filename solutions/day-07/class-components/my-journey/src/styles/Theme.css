@@ -90,7 +90,7 @@ input::placeholder {
 }
 
 /* By Classname definition */
-.intro-name,
+.accent-nickname,
 .copyright {
   color: var(--accent-color);
 }

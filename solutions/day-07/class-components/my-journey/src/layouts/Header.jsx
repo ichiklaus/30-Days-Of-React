@@ -2,6 +2,10 @@ import React from "react";
 import nicolasjpg from "../images/me.jpg";
 import { myInfo } from "../utils/MyInfo";
 
+import login from "../styles/modules/Login.module.css";
+import intro from "../styles/modules/Intro.module.css";
+const { img_container, img, title, second_title, info, info_container, info_top, info_wrapper } = intro;
+
 const STARTING_DATE = "27 of february of 2022";
 
 class Header extends React.Component {
@@ -57,14 +61,14 @@ class Header extends React.Component {
 
   GettingStarted = () => {
     return (
-      <h3 id="login-message">
+      <h3 id={login.message}>
         Please login to access more information about 30 Days Of React challenge
       </h3>
     );
   };
 
   Prerrequistes = () => {
-    return <h3 id="login-message">You have all the prerequisite courses to get started with React</h3>;
+    return <h3 id={login.message}>You have all the prerequisite courses to get started with React</h3>;
   };
 
   // Display messages
@@ -121,7 +125,7 @@ class Header extends React.Component {
     } = this.props.myInfo;
     return (
       <div id="home" className="header-wrapper">
-        <div className="login-wrapper">
+        <div className={login.wrapper}>
           <div className="action-wrapper">
             <this.ActionButton text={loggedInText} actions={this.handleLogin} />
             <this.ActionButton
@@ -143,16 +147,16 @@ class Header extends React.Component {
         </div>
 
         <header>
-          <div className="intro-info-container">
-            <div className="intro-info-top">
-              <div className="intro-info-wrapper">
+          <div className={info_container}>
+            <div className={info_top}>
+              <div className={info_wrapper}>
                 <i
                   id="theme-toggler"
                   className="fas fa-sun fa-lg"
                   onClick={this.toggleLightMode}
                 ></i>
-                <small className="intro-info"> {STARTING_DATE} </small>
-                <small className="intro-info">
+                <small className={info}> {STARTING_DATE} </small>
+                <small className={info}>
                   <span className="copyright">@{username}</span> on all my
                   social media
                 </small>
@@ -167,16 +171,16 @@ class Header extends React.Component {
             </nav>
           </div>
           <div className="paragraph">
-            <div className="intro-img-container">
-              <img src={nicolasjpg} alt="Nicolás" className="intro-img" />
+            <div className={img_container}>
+              <img src={nicolasjpg} alt="Nicolás" className={img} />
             </div>
-            <h1 className="intro-title">
+            <h1 className={`${title} intro-title`} >
               {/* Using destructured object to set inner HTML */}
-              Hallo! it's <span className="intro-name">{username}.</span>
+              Hallo! it's <span className="accent-nickname">{username}.</span>
             </h1>
             {/* Using states to set inner Html */}
-            <h2 className="intro-second-title">{this.state.welcometext}</h2>
-            <p className="intro-paragraph">
+            <h2 className={second_title}>{this.state.welcometext}</h2>
+            <p >
               {/* Using destructured object to set inner HTML */}
               I'm a computer systems engineer based in {countryBasedin}{" "}
               passionate and fully interested in web development and UI/UX.

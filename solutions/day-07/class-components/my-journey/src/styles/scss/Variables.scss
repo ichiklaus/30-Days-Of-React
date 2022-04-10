@@ -1,0 +1,51 @@
+/*
+* Base colours
+*/
+$dark-navy: #020c1b;
+$navy: #0a192f;
+$light-navy: #112240;
+$lightest-navy: #233554;
+$navy-shadow: rgba(2, 12, 27, 0.7);
+$slate: #8892b0;
+$light-slate: #a8b2d1;
+$lightest-slate: #ccd6f6;
+$white: #e6f1ff;
+$green-bright: #64ffda;
+$green-tint: rgba(100, 255, 218, 0.1);
+$gold-tint: rgba(185, 132, 78, 1);
+
+/*
+* Font size
+*/
+$fs-default: calc(100% + 18px);
+$fs-b-1: calc(100% + 16px);
+$fs-links: $fs-b-1;
+$fs-title: calc(100% + 4em);
+$fs-title-2: calc(100% + 2em);
+$fs-section-title: calc(100% + 46px);
+$fs-label: calc(100% + 1.5em);
+$fs-input: calc(100% + 1.1em);;
+$fs-small: calc(100% + .7em);
+
+/*
+* Font weight
+*/
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+
+/*
+* For spacing
+*/
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);

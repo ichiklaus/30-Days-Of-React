@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "NTR";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/public/fonts/NTR-Regular.ttf") format("truetype");
+}
+
 *,
 *:before,
 *:after {
@@ -88,28 +95,6 @@ label {
   margin: 0;
 }
 
-.login-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-#login-message {
-  margin-bottom: 4rem;
-  position: relative;
-  left: -5%;
-  display: flex;
-  /* white-space: nowrap; */
-  width: 350px;
-  height: 90px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-  /* border: 1px solid white; */
-}
-
 .display-datetime {
   position: fixed;
   right: 2.5%;
@@ -151,10 +136,6 @@ label {
   padding-top: 5%;
 }
 
-.intro-img-container {
-  display: flex;
-}
-
 .img-container {
   display: flex;
   max-width: 300px;
@@ -164,30 +145,6 @@ label {
 .img-element {
   max-width: 100%;
   height: auto;
-}
-
-.intro-img {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  object-fit: cover;
-  object-position: 0 0;
-  width: 160px;
-  height: 160px;
-}
-
-.intro-title {
-  font-size: 4em;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.intro-second-title {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
 }
 
 .nav-wrapper {
@@ -211,36 +168,13 @@ label {
   color: var(--button-text-color-hover);
 }
 
-.intro-info-container {
-  position: fixed;
-  right: 0;
-  bottom: 10%;
-}
-
-.intro-info-top {
-  position: fixed;
-  top: 10%;
-  right: 0;
-}
-
-.intro-info-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 2rem;
-  max-width: 100%;
-}
-
 #theme-toggler {
   position: fixed;
   top: 40px;
   right: 2%;
 }
 
-.intro-info {
-  font-weight: bolder;
-}
+
 
 .fn-input {
   font-weight: 600;
@@ -310,14 +244,14 @@ label {
   -o-border-radius: 5px;
 }
 
-
-
-.button:hover, input[type=file]::file-selector-button {
+.button:hover,
+input[type="file"]::file-selector-button {
   cursor: pointer;
 }
 
 .button.margin,
-.margin, div.margin {
+.margin,
+div.margin {
   margin-top: 2rem;
 }
 
@@ -382,7 +316,7 @@ label {
   margin-bottom: -0.5rem;
 }
 
-.footer-wrap {
+.footer-wrapper {
   width: 100%;
   /* position: fixed; */
   bottom: 0px;
@@ -459,4 +393,3 @@ textarea {
   height: 40px;
   width: 25%;
 }
-
