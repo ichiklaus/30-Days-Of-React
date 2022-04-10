@@ -1,9 +1,21 @@
-
-@use "variables";
+/*
+* Base colours
+*/
+/*
+* Font size
+*/
+/*
+* Font weight
+*/
+/*
+* For spacing
+*/
+/*
+* For margin and padding
+*/
 /*
 * Global selectors
 */
-
 *,
 *:before,
 *:after {
@@ -79,3 +91,5 @@ form {
 label {
   color: var(--title-color);
 }
+
+/*# sourceMappingURL=App.css.map */

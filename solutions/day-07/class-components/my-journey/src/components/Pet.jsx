@@ -19,7 +19,7 @@ class Pet extends React.Component {
   render() {
     return (
       <div className="action-center">
-        <h3 className="margin">Pet state changer</h3>
+        <h3 className="mt-4">Pet state changer</h3>
         <div className="img-container">
           <img
             src={this.state.image}
@@ -29,7 +29,7 @@ class Pet extends React.Component {
         </div>
         <button
           onClick={this.changePet}
-          className="button button--submit margin"
+          className="button button--submit mt-3"
         >
           Change pet
         </button>

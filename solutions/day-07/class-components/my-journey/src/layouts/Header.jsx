@@ -28,7 +28,7 @@ class Header extends React.Component {
         className={
           text === `Subscribe`
             ? `button button--submit`
-            : `button button--submit margin`
+            : `button button--submit mt-2`
         }
         onClick={actions}
       >
@@ -126,7 +126,7 @@ class Header extends React.Component {
     return (
       <div id="home" className="header-wrapper">
         <div className={login.wrapper}>
-          <div className="action-wrapper">
+          <div className="action-wrapper mt-4">
             <this.ActionButton text={loggedInText} actions={this.handleLogin} />
             <this.ActionButton
               text={`Show Date`}

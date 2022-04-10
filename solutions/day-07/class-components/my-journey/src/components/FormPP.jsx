@@ -258,8 +258,8 @@ class FormPP extends Component {
               </select>
             </div>
             {/* Radio button for Gender */}
-            <p className="m-top white">Gender</p>
-            <div className="form-group gender">
+            <p className="m-top  intro-title">Gender</p>
+            <div className="form-group mt-2 gender">
               <div>
                 <input
                   type="radio"
@@ -342,7 +342,7 @@ class FormPP extends Component {
               ></textarea>
             </div>
             {/* Input for File upload */}
-            <div className="form-group margin">
+            <div className="form-group mt-3">
               <input
                 type="file"
                 name="file"
@@ -351,7 +351,7 @@ class FormPP extends Component {
               />
             </div>
             <div>
-              <button className="button button--submit margin" type="submit">
+              <button className="button button--submit mt-3" type="submit">
                 Submit
               </button>
             </div>

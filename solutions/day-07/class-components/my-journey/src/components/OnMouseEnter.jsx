@@ -32,7 +32,7 @@ export default class OnMouseEnter extends Component {
 
   render() {
     return (
-      <div className="paragraph margin flex">
+      <div className="paragraph mt-3 flex">
         <div className="exercise-container">
           <p className="flex" style={this.state.p} onMouseEnter={this.handleMouseEnter}>
             Move me

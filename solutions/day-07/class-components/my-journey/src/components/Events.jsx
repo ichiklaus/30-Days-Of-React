@@ -89,7 +89,7 @@ export default class Events extends Component {
         <form
           onSubmit={this.handleSubmit}
           // style={{ display: "flex", alignItems: "center" }}
-          className="flex events"
+          className="flex events mb-4"
         >
           <div>
             <label htmlFor="firstname">Firstname: </label>
@@ -105,7 +105,7 @@ export default class Events extends Component {
         </form>
         <div>
           <button
-            className={`button button--submit margin`}
+            className={`button button--submit mt-3`}
             onClick={this.handleClick}
           >
             Click me!
@@ -113,13 +113,14 @@ export default class Events extends Component {
         </div>
         <div>
           <button
-            className={`button button--submit margin`}
+            className={`button button--submit mt-3`}
             onMouseMove={this.handleMouseMove}
           >
             Move over me
           </button>
         </div>
         <p
+        className="mt-5"
           style={{
             padding: ".35rem .5rem",
           }}
@@ -134,7 +135,7 @@ export default class Events extends Component {
           excepturi, vel similique nemo iusto consectetur officia earum commodi
           pariatur minima et?
         </p>
-        <label htmlFor="">Test for Key pressed, Blur, and Focus</label>
+        <label className="mb-2" htmlFor="">Test for Key pressed, Blur, and Focus</label>
         <input type="text" onKeyDown={this.handleKeyPressed} onBlur={this.handleBlurr} onFocus={this.handleFocus} />
 
       </div>

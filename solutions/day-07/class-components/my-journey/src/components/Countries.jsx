@@ -30,7 +30,7 @@ export default class Countries extends Component {
     return this.state.data.map((country, index) => {
       return (
         index < 5 && (
-          <div className="margin">
+          <div className="mt-5">
             <div className="img-container">
               <img
                 className="img-element"

@@ -22,7 +22,7 @@ class ActionButton extends React.Component {
         className={
           this.state.text === `Subscribe`
             ? `button button--submit`
-            : `button button--submit margin`
+            : `button button--submit mt-2`
         }
         type="button"
         onClick={this.state.actions}

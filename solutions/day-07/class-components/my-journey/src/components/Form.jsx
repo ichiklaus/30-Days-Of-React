@@ -62,7 +62,7 @@ class Form extends Component {
                   onChange={this.onChangeHandler}
                 />
               </div>
-              <button className={`button button--submit margin`} type="submit">Submit</button>
+              <button className={`button button--submit mt-4`} type="submit">Submit</button>
             </form>
           </div>
       </div>

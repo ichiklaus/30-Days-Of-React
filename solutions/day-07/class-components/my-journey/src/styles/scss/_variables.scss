@@ -24,18 +24,20 @@ $fs-title: calc(100% + 4em);
 $fs-title-2: calc(100% + 2em);
 $fs-section-title: calc(100% + 46px);
 $fs-label: calc(100% + 1.5em);
-$fs-input: calc(100% + 1.1em);;
-$fs-small: calc(100% + .7em);
+$fs-input: calc(100% + 1.1em);
+$fs-small: calc(100% + 0.7em);
 
 /*
 * Font weight
 */
-$fw-1: 100;
-$fw-2: 200;
-$fw-3: 300;
-$fw-4: 400;
-$fw-5: 500;
-$fw-6: 600;
+$font-weight: (
+  fw-1: 100,
+  fw-2: 200,
+  fw-3: 300,
+  fw-4: 400,
+  fw-5: 500,
+  fw-6: 600,
+);
 
 /*
 * For spacing
@@ -43,9 +45,21 @@ $fw-6: 600;
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+);
+
+/*
+* For margin and padding
+*/
+$m: margin;
+$p: padding;
+$sides: (
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
 );

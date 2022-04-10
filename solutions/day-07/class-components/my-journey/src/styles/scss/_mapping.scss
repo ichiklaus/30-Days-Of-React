@@ -1,0 +1,22 @@
+@import "variables";
+
+/*
+* Mapping through margins and padding
+*/
+@each $size-number, $size-value in $spacers {
+  @each $side, $side-value in $sides {
+    .m#{$side}-#{$size-number} {
+      #{$m}-#{$side-value}: #{$size-value};
+    }
+
+    .p#{$side}-#{$size-number} {
+      #{$p}-#{$side-value}: #{$size-value};
+    }
+  }
+}
+
+@each $font-weight-key, $font-weight-value in $font-weight {
+  .#{$font-weight-key} {
+    font-weight: #{$font-weight-value};
+  }
+}

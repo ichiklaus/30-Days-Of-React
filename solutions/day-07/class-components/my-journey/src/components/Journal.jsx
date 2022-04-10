@@ -137,10 +137,7 @@ return (<div>mappedArray<div>);`}
           On day 08 I learnt about states, which means the state of a component
           under a condition. Here are some components that change their states:
         </p>
-        <div
-          id="stateful-components"
-          className="action-center margin paragraph"
-        >
+        <div id="stateful-components" className="action-center mt-4 paragraph">
           <h3>Class-based CTA buttons components with props arguments</h3>
           <div>
             <ActionButton actions={hiButton.sayHi} text={hiButton.text} />
@@ -203,7 +200,9 @@ return (<div>mappedArray<div>);`}
           did some practice which is shown below:
         </p>
         <Events />
-        <h4>Exercise solution for day 11: Random position on mouse enters</h4>
+        <h4 className="mt-5">
+          Exercise solution for day 11: Random position on mouse enters
+        </h4>
         <OnMouseEnter />
         <h3>## Day-12</h3>
         <Form />
@@ -247,7 +246,20 @@ return (<div>mappedArray<div>);`}
         <h4>API fetching with componentDidMount Cycle</h4>
         <Countries />
         <h4>## Day-15</h4>
-        
+        <p className="paragraph">
+          On day 15 I reviewed 3rd party libraries, especifically: SCSS, CSS
+          modules, where I modified bits of my styling code to try out both.
+          Previously in this journal, and in a FEM challenge I used bootstrap
+          and react-bootstrap.
+          <p className="paragraph">
+            Goal: Build projects with Material UI, Styled Components,
+            Reactstrap, Tailwind, Bulma, and React Icons.
+          </p>
+          <p className="paragraph">
+            Implement: axios for API fetching, and moment for datetime formats.
+          </p>
+        </p>
+        <h4>## Day-16</h4>
       </div>
     );
   }
