@@ -6,6 +6,7 @@ class User extends Component {
     firstName: "Nicolas",
     day: 1,
     congratulate: "",
+    text: "Increase"
   }
 
 
@@ -68,6 +69,7 @@ class User extends Component {
     if (prevState.day === 30) {
       this.setState({
         congratulate: "Congratulations, you reached the milestone!",
+        text: "Decrease"
       });
     };
   }
@@ -78,7 +80,7 @@ class User extends Component {
       {/* As seen, it returns the value of props (John) coming from User's prop definition in App component */}
       <h1>{this.state.firstName}</h1> {/* The value of User.state is overwritten with the value coming from the props */}
       <p>Day: {this.state.day}</p>
-      <button type='submit' onClick={this.doChallenge}>Increase day</button>
+      <button type='submit' onClick={this.doChallenge}>{this.state.text}</button>
       {this.state.congratulate && <p>{this.state.congratulate}</p>}
     </div>
     )

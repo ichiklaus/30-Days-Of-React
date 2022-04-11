@@ -24,7 +24,7 @@ const options = [
 ];
 
 const selectOptions = options.map(({ value, label }) => (
-  <option value={value}>{label}</option>
+  <option key={value} value={value}>{label}</option>
 ));
 
 class FormPP extends Component {

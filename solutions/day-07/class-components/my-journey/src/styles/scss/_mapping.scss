@@ -6,7 +6,7 @@
 @each $size-number, $size-value in $spacers {
   @each $side, $side-value in $sides {
     .m#{$side}-#{$size-number} {
-      #{$m}-#{$side-value}: #{$size-value};
+      #{$m}-#{$side-value}: #{$size-value} !important;
     }
 
     .p#{$side}-#{$size-number} {
@@ -17,6 +17,6 @@
 
 @each $font-weight-key, $font-weight-value in $font-weight {
   .#{$font-weight-key} {
-    font-weight: #{$font-weight-value};
+    font-weight: #{$font-weight-value} !important;
   }
 }

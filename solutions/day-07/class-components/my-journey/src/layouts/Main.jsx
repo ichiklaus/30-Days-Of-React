@@ -57,7 +57,7 @@ class Main extends React.Component {
           {/* Contact me section */}
           <section id="contact-me-section" className="paragraph">
             <div className="contact-box">
-              <input type="text" id="email" placeholder="mail@example.com" />
+              <input className="mb-4" type="text" id="email" placeholder="mail@example.com" />
               <ActionButton text={subscribe.text} />
             </div>
           </section>

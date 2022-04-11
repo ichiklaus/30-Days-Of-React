@@ -13,8 +13,6 @@ class ActionButton extends React.Component {
     }
   }
 
-  
-
   render() {
     // const { actions, text } = this.props;
     return (

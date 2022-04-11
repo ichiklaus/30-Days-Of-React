@@ -352,6 +352,24 @@ div.margin {
   text-align: center;
 }
 
+.grid-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.grid-auto-fill > button {
+  text-align: center;
+}
+
+
 .form-group {
   display: flex;
   text-align: center;

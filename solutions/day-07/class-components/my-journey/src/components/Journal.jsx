@@ -7,6 +7,14 @@ import OnMouseEnter from "./OnMouseEnter";
 import Form from "./Form";
 import FormPP from "./FormPP";
 import Countries from "./Countries";
+import {
+  ReactButton,
+  SuccessButton,
+  InfoButton,
+  WarningButton,
+  DangerButton,
+  DefaultButton,
+} from "../mocks/HOCSnipet";
 
 class Journal extends React.Component {
   render() {
@@ -251,15 +259,30 @@ return (<div>mappedArray<div>);`}
           modules, where I modified bits of my styling code to try out both.
           Previously in this journal, and in a FEM challenge I used bootstrap
           and react-bootstrap.
-          <p className="paragraph">
-            Goal: Build projects with Material UI, Styled Components,
-            Reactstrap, Tailwind, Bulma, and React Icons.
-          </p>
-          <p className="paragraph">
-            Implement: axios for API fetching, and moment for datetime formats.
-          </p>
+        </p>
+        <p className="paragraph">
+          Goal: Build projects with Material UI, Styled Components, Reactstrap,
+          Tailwind, Bulma, and React Icons.
+        </p>
+        <p className="paragraph">
+          Implement: axios for API fetching, and moment for datetime formats.
         </p>
         <h4>## Day-16</h4>
+        <p className="paragraph">
+          This was about High Order Components. I reviewed about both functinal
+          HOC and class-based HOC. Here is a mockup exercise I took from the
+          challenge and wrote it after reviewing the code:
+        </p>
+        <div className="grid-container mt-4">
+          <div className="grid-auto-fill">
+            {<ReactButton text={"React"} />}
+            {<InfoButton text={"Info"} />}
+            {<SuccessButton text={"Success"} />}
+            {<WarningButton text={"Warning"} />}
+            {<DangerButton text={"Danger"} />}
+            {<DefaultButton text={"Default"} />}
+          </div>
+        </div>
       </div>
     );
   }

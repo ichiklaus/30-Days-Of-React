@@ -50,3 +50,41 @@
   padding-right: 2rem;
   max-width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .info_container {
+    width: 85vw;
+    position: static;
+  }
+
+  .info_wrapper {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .info_top {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 899px) {
+  .info_container {
+    width: 85vw;
+    position: relative;
+  }
+
+  .info_wrapper {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .info_top {
+    position: static;
+  }
+}

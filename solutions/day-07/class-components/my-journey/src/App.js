@@ -5,7 +5,7 @@ import './styles/Breakouts.css';
 import './styles/Variables.css';
 import './styles/Theme.css'
 import 'normalize.css';
-// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 import { welcomeSection, myInfo } from './utils/MyInfo';
 import actions from './utils/Actions';

@@ -1,10 +1,20 @@
 import React from "react";
 import nicolasjpg from "../images/me.jpg";
 import { myInfo } from "../utils/MyInfo";
+import ActionButton from "../components/ActionButton";
 
 import login from "../styles/modules/Login.module.css";
 import intro from "../styles/modules/Intro.module.css";
-const { img_container, img, title, second_title, info, info_container, info_top, info_wrapper } = intro;
+const {
+  img_container,
+  img,
+  title,
+  second_title,
+  info,
+  info_container,
+  info_top,
+  info_wrapper,
+} = intro;
 
 const STARTING_DATE = "27 of february of 2022";
 
@@ -42,15 +52,11 @@ class Header extends React.Component {
     this.setState({
       loggedIn: !this.state.loggedIn,
     });
-    // console.log(
-    //   "🚀 ~ file: App.js ~ line 22 ~ App ~ this.state.loggedIn",
-    //   this.state.loggedIn
-    // );
   };
 
   // Displays current state for login handler
   Status = () => {
-    return this.state.loggedIn === ""? (
+    return this.state.loggedIn === "" ? (
       <h3 className="welcome-message">
         Welcome to my 30 days of React journey
       </h3>
@@ -68,7 +74,11 @@ class Header extends React.Component {
   };
 
   Prerrequistes = () => {
-    return <h3 id={login.message}>You have all the prerequisite courses to get started with React</h3>;
+    return (
+      <h3 id={login.message}>
+        You have all the prerequisite courses to get started with React
+      </h3>
+    );
   };
 
   // Display messages
@@ -118,7 +128,6 @@ class Header extends React.Component {
   };
 
   render() {
-    let loggedInText = this.state.loggedIn ? "Logout" : "Log in";
     const {
       author: { username },
       countryBasedin,
@@ -127,11 +136,22 @@ class Header extends React.Component {
       <div id="home" className="header-wrapper">
         <div className={login.wrapper}>
           <div className="action-wrapper mt-4">
-            <this.ActionButton text={loggedInText} actions={this.handleLogin} />
+            <this.ActionButton
+              text={this.state.loggedIn ? "Logout" : "Log in"}
+              actions={this.handleLogin}
+            />
             <this.ActionButton
               text={`Show Date`}
               actions={this.datetimeHandler}
             />
+            {/* <ActionButton 
+            text={this.state.loggedIn ? "Logout" : "Log in"}
+            actions={this.handleLogin}
+            />
+            <ActionButton 
+            text={`Show Date`}
+            actions={this.datetimeHandler}
+            /> */}
           </div>
           {/* Conditional Rendering using &&  */}
           {!this.state.loggedIn && ( // Checks the login status, if it's not logged in, it displays Please login text from GettingStarted Component
@@ -174,13 +194,13 @@ class Header extends React.Component {
             <div className={img_container}>
               <img src={nicolasjpg} alt="Nicolás" className={img} />
             </div>
-            <h1 className={`${title} intro-title`} >
+            <h1 className={`${title} intro-title`}>
               {/* Using destructured object to set inner HTML */}
               Hallo! it's <span className="accent-nickname">{username}.</span>
             </h1>
             {/* Using states to set inner Html */}
             <h2 className={second_title}>{this.state.welcometext}</h2>
-            <p >
+            <p>
               {/* Using destructured object to set inner HTML */}
               I'm a computer systems engineer based in {countryBasedin}{" "}
               passionate and fully interested in web development and UI/UX.

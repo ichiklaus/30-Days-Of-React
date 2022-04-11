@@ -43,22 +43,22 @@
 
 /* Element's colors */
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color) !important;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  color: var(--second-title-color);
+  color: var(--second-title-color) !important;
 }
 
 a {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 p,
@@ -69,8 +69,8 @@ small,
 }
 
 code {
-  background-color: var(--code-bg-color);
-  color: var(--title-color);
+  background-color: var(--code-bg-color) !important;
+  color: var(--title-color) !important;
 }
 
 input {

@@ -2,10 +2,8 @@ import React from "react";
 
 class TechsList extends React.Component {
   Skills = (techStack) => {
-    return techStack.map((item) => (
-      <>
-        <li key={item}>{item}</li>
-      </>
+    return techStack.map((item) => (      
+        <li key={item}>{item}</li>      
     ));
   };
 

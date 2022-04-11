@@ -2,14 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './App';
-// import App from './SnippetApp';
+// import App from './mocks/SnippetApp';
 import reportWebVitals from './reportWebVitals';
 import "@fontsource/ntr";
 
 
+
+// const NewButton = buttonWithStyle(Button);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <Button 
+    text={"No styles"}
+    />
+    <NewButton
+    text={"With Style"}
+    /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
