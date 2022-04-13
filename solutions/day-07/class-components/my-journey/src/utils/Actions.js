@@ -1,6 +1,9 @@
 const actions = {
   subscribe: {
     text: "Subscribe",
+    subscribe: function() {
+      alert("Subscribed");
+    }
   },
   hiButton: {
     sayHi: function () {

@@ -7,28 +7,22 @@ import './styles/Theme.css'
 import 'normalize.css';
 // import "bootstrap/dist/css/bootstrap.css";
 
-import { welcomeSection, myInfo } from './utils/MyInfo';
+import { myInfo } from './utils/MyInfo';
 import actions from './utils/Actions';
-import Header from './layouts/Header';
+// import Header from './layouts/Header';
 import Main from './layouts/Main';
-import Footer from './layouts/Footer';
 
 class App extends React.Component {
 
   render() {
     return (
       <div className="App">
-        <Header
-          welcomeSection={welcomeSection}
-          myInfo={myInfo}
-        />
+
         <Main
           myInfo={myInfo}
           actions={actions}
         />
-        <Footer
-          myInfo={myInfo}
-        />
+
       </div>
     );
   }

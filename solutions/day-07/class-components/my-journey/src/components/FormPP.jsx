@@ -24,7 +24,9 @@ const options = [
 ];
 
 const selectOptions = options.map(({ value, label }) => (
-  <option key={value} value={value}>{label}</option>
+  <option key={value} value={value}>
+    {label}
+  </option>
 ));
 
 class FormPP extends Component {
@@ -81,17 +83,17 @@ class FormPP extends Component {
   validate = () => {
     // Object to collect error feedback and to display on the form
     const errors = {
-      firstName: '',
-    }
+      firstName: "",
+    };
 
     if (
       (this.state.touched.firstname && this.state.firstname.length < 3) ||
       (this.state.touched.firstname && this.state.firstname.length > 12)
     ) {
-      errors.firstName = 'First name must be between 2 and 12'
+      errors.firstName = "First name must be between 2 and 12";
     }
-    return errors
-  }
+    return errors;
+  };
 
   onSubmitHandler = (event) => {
     event.preventDefault();
@@ -134,7 +136,9 @@ class FormPP extends Component {
     };
     console.log(data);
     console.log(this.validate());
-    console.log(`status of createRef for lastname: ${this.lastnameRef.current.value}`);
+    console.log(
+      `status of createRef for lastname: ${this.lastnameRef.current.value}`
+    );
   };
 
   render() {
@@ -167,7 +171,7 @@ class FormPP extends Component {
                 onChange={this.onChangehandler}
                 onBlur={this.onBlurHandler}
                 placeholder={"Firstname"}
-                />
+              />
             </div>
             {/* Input text for lastname */}
             <div className="form-group">

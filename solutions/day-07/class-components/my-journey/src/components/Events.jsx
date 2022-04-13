@@ -70,21 +70,21 @@ export default class Events extends Component {
 
   // Handler for blur (when leaving an area by clicking outside of it)
   handleBlurr = (event) => {
-      this.setState({
-          message: "Input field has been blurred",
-      })
-  }
+    this.setState({
+      message: "Input field has been blurred",
+    });
+  };
 
   // Handler for Focusing an element
   handleFocus = (event) => {
-      this.setState({
-          message: "Focused",
-      })
-  }
+    this.setState({
+      message: "Focused",
+    });
+  };
 
   render() {
     return (
-      <div  className="paragraph"    style={flex}>
+      <div className="paragraph" style={flex}>
         <h4>Events in React</h4>
         <form
           onSubmit={this.handleSubmit}
@@ -120,7 +120,7 @@ export default class Events extends Component {
           </button>
         </div>
         <p
-        className="mt-5"
+          className="mt-5"
           style={{
             padding: ".35rem .5rem",
           }}
@@ -128,16 +128,21 @@ export default class Events extends Component {
           <span style={stylesForSpanLabel}>Value for target value:</span>{" "}
           <span style={stylesForSpanValue}>{this.state.message}</span>
         </p>
-        <p
-         onCopy={this.handleCopy}>
+        <p onCopy={this.handleCopy}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
           amet rerum! Cumque iusto cum dolore voluptatibus molestiae? Suscipit
           excepturi, vel similique nemo iusto consectetur officia earum commodi
           pariatur minima et?
         </p>
-        <label className="mb-2" htmlFor="">Test for Key pressed, Blur, and Focus</label>
-        <input type="text" onKeyDown={this.handleKeyPressed} onBlur={this.handleBlurr} onFocus={this.handleFocus} />
-
+        <label className="mb-2" htmlFor="">
+          Test for Key pressed, Blur, and Focus
+        </label>
+        <input
+          type="text"
+          onKeyDown={this.handleKeyPressed}
+          onBlur={this.handleBlurr}
+          onFocus={this.handleFocus}
+        />
       </div>
     );
   }

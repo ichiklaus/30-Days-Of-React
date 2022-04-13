@@ -27,10 +27,7 @@ class Pet extends React.Component {
             className="img-element"
           />
         </div>
-        <button
-          onClick={this.changePet}
-          className="button button--submit mt-3"
-        >
+        <button onClick={this.changePet} className="button button--submit mt-3">
           Change pet
         </button>
       </div>

@@ -17,8 +17,14 @@ import {
 } from "../mocks/HOCSnipet";
 
 class Journal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hiButton: this.props.hiButton,
+      datetimeButton: this.props.datetimeButton,
+    };
+  }
   render() {
-    const { hiButton, datetimeButton } = this.props;
     return (
       <div>
         <div id="topics-header" className="section-header">
@@ -148,12 +154,15 @@ return (<div>mappedArray<div>);`}
         <div id="stateful-components" className="action-center mt-4 paragraph">
           <h3>Class-based CTA buttons components with props arguments</h3>
           <div>
-            <ActionButton actions={hiButton.sayHi} text={hiButton.text} />
+            <ActionButton
+              actions={this.state.hiButton.sayHi}
+              text={this.state.hiButton.text}
+            />
           </div>
           <div>
             <ActionButton
-              actions={datetimeButton.showTime}
-              text={datetimeButton.text}
+              actions={this.state.datetimeButton.showTime}
+              text={this.state.datetimeButton.text}
             />
           </div>
           <Aritmethic />
@@ -169,7 +178,6 @@ return (<div>mappedArray<div>);`}
           theme current status.
         </p>
         <h3>## Day-09</h3>
-        {/* <h4>Conditional rendering</h4> */}
         <p className="paragraph">
           On day 09 it was about conditionally rendering React components. I
           created a Login/Logout text-based state which displays the correct
@@ -214,8 +222,9 @@ return (<div>mappedArray<div>);`}
         <OnMouseEnter />
         <h3>## Day-12</h3>
         <p className="paragraph">
-          Day 12 was about form validation. I reviewd HTML forms and learnt about some of the JS events 
-          to manipulate the DOM. It took me a couple of days to practice with forms.
+          Day 12 was about form validation. I reviewd HTML forms and learnt
+          about some of the JS events to manipulate the DOM. It took me a couple
+          of days to practice with forms.
         </p>
         <Form />
         <FormPP />
@@ -287,7 +296,7 @@ return (<div>mappedArray<div>);`}
             {<DefaultButton text={"Default"} />}
           </div>
         </div>
-        <h4>## Day-18</h4>
+        <h4>## Day-17</h4>
         <p className="paragraph">
           Between 11 and 12 of april I reviewed the basics of React Routing. I
           used the version 6 even though the curriculum uses version 5.

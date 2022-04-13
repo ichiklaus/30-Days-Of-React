@@ -16,7 +16,7 @@ export default class Countries extends Component {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         this.setState({
           data,
         });

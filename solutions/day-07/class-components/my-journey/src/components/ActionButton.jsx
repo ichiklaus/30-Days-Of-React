@@ -3,18 +3,13 @@ import React from "react";
 class ActionButton extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(
-    //   "🚀 ~ file: ActionButton.jsx ~ line 6 ~ ActionButton ~ constructor ~ props",
-    //   this.props
-    // );
     this.state = {
       actions: this.props.actions,
       text: this.props.text,
-    }
+    };
   }
 
   render() {
-    // const { actions, text } = this.props;
     return (
       <button
         className={

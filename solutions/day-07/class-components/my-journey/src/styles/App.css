@@ -28,8 +28,9 @@ main {
 }
 
 footer {
+  position: relative;
   margin-top: 5rem;
-  bottom: 0px;
+  bottom: -50px;
   height: 50px;
   display: flex;
   flex-direction: column;
@@ -174,8 +175,6 @@ label {
   right: 2%;
 }
 
-
-
 .fn-input {
   font-weight: 600;
 }
@@ -316,10 +315,16 @@ div.margin {
   margin-bottom: -0.5rem;
 }
 
+/* #Content {
+  height: 95vh;
+} */
+
 .footer-wrapper {
   width: 100%;
-  /* position: fixed; */
-  bottom: 0px;
+  position: fixed;
+  bottom: 0px; 
+  height: 100vw;
+
 }
 
 #theme-toggler:hover {
@@ -368,7 +373,6 @@ div.margin {
 .grid-auto-fill > button {
   text-align: center;
 }
-
 
 .form-group {
   display: flex;

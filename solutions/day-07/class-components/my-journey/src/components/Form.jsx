@@ -11,7 +11,6 @@ class Form extends Component {
   onChangeHandler = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    
   };
 
   onSubmitHandler = (event) => {
@@ -23,48 +22,50 @@ class Form extends Component {
     const { firstname, lastname, country, title } = this.state;
     return (
       <div className="flex paragraph">
-          <div className="form-wrapper">
-            <h3>Add student</h3>
-            <form onSubmit={this.onSubmitHandler}>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="firstname"
-                  placeholder="Firstname"
-                  value={firstname}
-                  onChange={this.onChangeHandler}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="lastname"
-                  placeholder="Lastname"
-                  value={lastname}
-                  onChange={this.onChangeHandler}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="country"
-                  placeholder="Country"
-                  value={country}
-                  onChange={this.onChangeHandler}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="title"
-                  placeholder="Title"
-                  value={title}
-                  onChange={this.onChangeHandler}
-                />
-              </div>
-              <button className={`button button--submit mt-4`} type="submit">Submit</button>
-            </form>
-          </div>
+        <div className="form-wrapper">
+          <h3>Add student</h3>
+          <form onSubmit={this.onSubmitHandler}>
+            <div className="form-group">
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Firstname"
+                value={firstname}
+                onChange={this.onChangeHandler}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Lastname"
+                value={lastname}
+                onChange={this.onChangeHandler}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                name="country"
+                placeholder="Country"
+                value={country}
+                onChange={this.onChangeHandler}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                value={title}
+                onChange={this.onChangeHandler}
+              />
+            </div>
+            <button className={`button button--submit mt-4`} type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     );
   }

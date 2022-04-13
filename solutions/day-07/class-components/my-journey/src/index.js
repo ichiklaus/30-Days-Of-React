@@ -6,10 +6,11 @@ import "./styles/Theme.css";
 import "./styles/Variables.css";
 import "./styles/Breakouts.css";
 
-// import App from './App';
-// import App from './mocks/SnippetApp';
-import {RouterApp}  from "./mocks/RouterIndex";
+import { myInfo } from './utils/MyInfo';
+import { RouterApp } from "./mocks/RouterIndex";
 import reportWebVitals from './reportWebVitals';
+import Footer from './layouts/Footer';
+
 
 
 import "@fontsource/ntr";
@@ -20,13 +21,10 @@ let root = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Button 
-    text={"No styles"}
-    />
-    <NewButton
-    text={"With Style"}
-    /> */}
     <RouterApp />
+    <Footer
+      myInfo={myInfo}
+    />
   </React.StrictMode>,
   root
 );

@@ -34,7 +34,11 @@ export default class OnMouseEnter extends Component {
     return (
       <div className="paragraph mt-3 flex">
         <div className="exercise-container">
-          <p className="flex" style={this.state.p} onMouseEnter={this.handleMouseEnter}>
+          <p
+            className="flex"
+            style={this.state.p}
+            onMouseEnter={this.handleMouseEnter}
+          >
             Move me
           </p>
         </div>
