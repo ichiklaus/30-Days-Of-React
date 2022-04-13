@@ -8,7 +8,7 @@ import Home from "../routes/HomeRoute/Home";
 import About from "../routes/AboutRoute/About";
 import Contact from "../routes/ContactRoute/Contact";
 import Journal from "../routes/JournalRoute/JournalRoute"
-import Challenge from "../routes/ChallengeRoute/Challenge";
+// import Challenge from "../routes/ChallengeRoute/Challenge";
 import Invoices from '../routes/InvoicesRoute/Invoices';
 import Invoice from '../routes/InvoicesRoute/Invoice';
 import Expenses from '../routes/ExpensesRoute/Expenses';
