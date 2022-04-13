@@ -172,13 +172,13 @@ class Header extends React.Component {
                 </small>
               </div>
             </div>
-            <nav id="side-navbar">
+            {/* <nav id="side-navbar">
               <div className="nav-wrapper">
                 <a href="#home">/home</a>
                 <a href="#about-me-section">/about</a>
                 <a href="#topics-section">/journal</a>
               </div>
-            </nav>
+            </nav> */}
           </div>
         </header>
       </div>

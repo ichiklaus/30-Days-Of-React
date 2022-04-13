@@ -28,6 +28,11 @@
     padding-top: 0;
   }
 
+  .grid-container {
+    /* width: 50%; */
+    margin: 0 auto;
+  }
+
   /* .intro-info-container {
     width: 85vw;
     position: static;
@@ -110,7 +115,6 @@
   .exercise-container {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 899px) {
@@ -138,6 +142,11 @@
     right: -8%;
   }
 
+  .grid-container {
+    /* width: 50%; */
+    margin: 0 auto;
+  }
+
   .nav-wrapper > a:not(:last-child) {
     margin-right: 1rem;
   }
@@ -153,8 +162,8 @@
   } */
 
   .action-wrapper {
-  position: relative;
-  left: 50%;
+    position: relative;
+    left: 50%;
   }
 }
 

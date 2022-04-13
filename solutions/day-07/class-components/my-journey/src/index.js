@@ -5,9 +5,12 @@ import './styles/index.css';
 import "./styles/Theme.css";
 import "./styles/Variables.css";
 import "./styles/Breakouts.css";
+import './styles/css/Utils.css'
+import './styles/App.css';
+import 'normalize.css';
 
 import { myInfo } from './utils/MyInfo';
-import { RouterApp } from "./mocks/RouterIndex";
+import { RouterApp } from "./RouterIndex";
 import reportWebVitals from './reportWebVitals';
 import Footer from './layouts/Footer';
 
