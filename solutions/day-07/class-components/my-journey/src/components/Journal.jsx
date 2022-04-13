@@ -213,6 +213,10 @@ return (<div>mappedArray<div>);`}
         </h4>
         <OnMouseEnter />
         <h3>## Day-12</h3>
+        <p className="paragraph">
+          Day 12 was about form validation. I reviewd HTML forms and learnt about some of the JS events 
+          to manipulate the DOM. It took me a couple of days to practice with forms.
+        </p>
         <Form />
         <FormPP />
         <h3>## Day-13</h3>
@@ -283,6 +287,20 @@ return (<div>mappedArray<div>);`}
             {<DefaultButton text={"Default"} />}
           </div>
         </div>
+        <h4>## Day-18</h4>
+        <p className="paragraph">
+          Between 11 and 12 of april I reviewed the basics of React Routing. I
+          used the version 6 even though the curriculum uses version 5.
+          Differences I could notice so far between the versions are that
+          Switches in v5 renames to Routes in v6; component and render
+          properties are replaced by element in order to render components. I
+          learned the difference between Link and NavLink which is that in the
+          former, Link doesn't allow styling, whereas in NavLink I'm able to use
+          styles and className. Also, in v5 it was named activeClassName and
+          activeStyle. I implemented routing in a navbar that's on top of the
+          page. In the coming days I'm gonna reestructure the project and create
+          routes for the login, journal, and home sections.
+        </p>
       </div>
     );
   }

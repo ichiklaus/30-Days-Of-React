@@ -61,4 +61,25 @@ On day 10 it was about learning to structure the project; theres not one way to 
 On this day I could learn about fragments which are a react component which is useful when rendering a child component and it avoids creating another DOM parent node (like you know you have to wrap multiple elements in a div) so with <Fragment></Fragment> or simply <></>, you can wrap those child elements from a <ul></ul> or a <td></td>.
 
 ## Day 11
-On day 11 I look into event handlers; since there is a vast diversity of JS events I only practiced with some of the most commonly used. Using states I could log the changes ocurring when an event happens. I did some practice which is shown below:
+On day 11 I look into event handlers; since there is a vast diversity of JS events I only practiced with some of the most commonly used. Using states I could log the changes ocurring when an event happens.
+
+## Day 12
+Day 12 was about form validation. I reviewd HTML forms and learnt about some of the JS events to manipulate the DOM. It took me a couple of days to practice with forms.
+
+## Day 13
+Day 13 was about controlled vs uncontrolled forms. I kinda grasped the concept of uncontrolled forms and the use of refs using createRef() in
+class-based components, though it is not advised to use refs to manipulate data (as I understood); it's just useful when working on
+animations, or anything not data-related.
+
+## Day 14
+On day 14 I'm learning about component lifecycles. So far I understand their order of render, and that getDerivedStateFromProps is "used to alter the state of this.state with properties from props" so, we pass props from the parent component into the child component and it is then rendered through getDerivedState; componentDidMount on the other hand, updates the component: the method is called after the component is rendered through render().
+I did an simple API fetching that displays basic info about countries (limited to 5 results).
+
+## Day 15
+On day 15 I reviewed 3rd party libraries, especifically: SCSS, CSS modules, where I modified bits of my styling code to try out both. Previously in this journal, and in a FEM challenge I used bootstrap and react-bootstrap.
+
+## Day 16
+This was about High Order Components. I reviewed about both functinal HOC and class-based HOC. There is a mockup exercise I took from the challenge and wrote it after reviewing the code which can be viewed in My Journey project.
+
+## Day 17
+Between 11 and 12 of april I reviewed the basics of React Routing. I used the version 6 even though the curriculum uses version 5. Differences I could notice so far between the versions are that Switches in v5 renames to Routes in v6; component and render properties are replaced by element in order to render components. I learned the difference between Link and NavLink which is that in the former, Link doesn't allow styling, whereas in NavLink I'm able to use styles and className. Also, in v5 it was named activeClassName and activeStyle. I implemented routing in a navbar that's on top of the page. In the coming days I'm gonna reestructure the project and create routes for the login, journal, and home sections.
