@@ -1,6 +1,6 @@
-import HOCStyledButton from '../mocks/HOCStyledButton';
+import HOCStyledButton from '../components/HOCStyledButton';
 // import buttonWithStyle from '../mocks/HigherOrderComponent';
-import Button from '../mocks/AButton';
+import Button from '../components/AButton';
 
 const ReactButton = HOCStyledButton(Button, "react");
 const SuccessButton = HOCStyledButton(Button, "success");

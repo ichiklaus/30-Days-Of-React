@@ -145,7 +145,7 @@ label {
 
 .img-element {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .nav-wrapper {
@@ -189,7 +189,7 @@ label {
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .section-title {
@@ -357,17 +357,28 @@ div.margin {
   text-align: center;
 }
 
-.grid-container {
+.grid-container.g50{
   width: 50%;
+  /* margin: 0 auto; */
+}
+
+.grid-container.g70{
+  width: 70%;
   /* margin: 0 auto; */
 }
 
 .grid-auto-fill {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
   width: 90%;
   margin: 0 auto;
+}
+
+.grid-auto-fill.space-1{
+  gap: 3%;
+}
+.grid-auto-fill.space-2{
+  gap: calc(3% * 1.5);
 }
 
 .grid-auto-fill > button {

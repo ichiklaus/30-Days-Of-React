@@ -22,17 +22,13 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div className="main-wrapper">
-        <main>
-          {/* Journal section */}
-          <section id="topics-section">
-            <Journal
-              hiButton={this.state.hiButton}
-              datetimeButton={this.state.datetimeButton}
-            />
-          </section>
-        </main>
-      </div>
+      <section id="topics-section">
+        {/* Journal section */}
+        <Journal
+          hiButton={this.state.hiButton}
+          datetimeButton={this.state.datetimeButton}
+        />
+      </section>
     );
   }
 }

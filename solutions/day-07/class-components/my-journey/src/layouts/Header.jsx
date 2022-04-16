@@ -124,64 +124,63 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div id="home" className="header-wrapper">
-        <div className={login.wrapper}>
-          <div className="action-wrapper mt-4">
-            {/* <this.ActionButton
-              text={this.state.loggedIn ? "Logout" : "Log in"}
-              actions={this.handleLogin}
-            /> */}
-            <this.ActionButton
-              text={`Show Date`}
-              actions={this.datetimeHandler}
-            />
-            {/* <ActionButton 
-            text={this.state.loggedIn ? "Logout" : "Log in"}
-            actions={this.handleLogin}
-            />
-            <ActionButton 
+      <header id="home" className="header-wrapper">
+        {/* <div className={login.wrapper}> */}
+        <div className="action-wrapper mt-4">
+          {/* <this.ActionButton
+          text={this.state.loggedIn ? "Logout" : "Log in"}
+          actions={this.handleLogin}
+          /> */}
+          <this.ActionButton
             text={`Show Date`}
             actions={this.datetimeHandler}
-            /> */}
-          </div>
-          {/* Conditional Rendering using &&  */}
-          {/* {!this.state.loggedIn && ( // Checks the login status, if it's not logged in, it displays Please login text from GettingStarted Component
-            <this.GettingStarted />
-          )} */}
-          {/* <this.Status /> */}
-          {/* {this.state.techStack.length >= 3 && this.state.loggedIn && (
-            <this.Prerrequistes />
-          )} */}
-          <div className="display-datetime">
-            <this.DatetimeMessage message={this.state.message} />
-          </div>
+          />
+          {/* <ActionButton 
+          text={this.state.loggedIn ? "Logout" : "Log in"}
+          actions={this.handleLogin}
+          />
+          <ActionButton 
+          text={`Show Date`}
+          actions={this.datetimeHandler}
+        /> */}
         </div>
-        <header>
-          <div className={info_container}>
-            <div className={info_top}>
-              <div className={info_wrapper}>
-                <i
-                  id="theme-toggler"
-                  className="fas fa-sun fa-lg"
-                  onClick={this.toggleLightMode}
-                ></i>
-                <small className={info}> {STARTING_DATE} </small>
-                <small className={info}>
-                  <span className="copyright">@{this.state.username}</span> on
-                  all my social media
-                </small>
-              </div>
+        {/* Conditional Rendering using &&  */}
+        {/* {!this.state.loggedIn && ( // Checks the login status, if it's not logged in, it displays Please login text from GettingStarted Component
+        <this.GettingStarted />
+        )} */}
+        {/* <this.Status /> */}
+        {/* {this.state.techStack.length >= 3 && this.state.loggedIn && (
+        <this.Prerrequistes />
+        )} */}
+        <div className="display-datetime">
+          <this.DatetimeMessage message={this.state.message} />
+        </div>
+        {/* </div> */}
+
+        <div className={info_container}>
+          <div className={info_top}>
+            <div className={info_wrapper}>
+              <i
+                id="theme-toggler"
+                className="fas fa-sun fa-lg"
+                onClick={this.toggleLightMode}
+              ></i>
+              <small className={info}> {STARTING_DATE} </small>
+              <small className={info}>
+                <span className="copyright">@{this.state.username}</span> on all
+                my social media
+              </small>
             </div>
-            {/* <nav id="side-navbar">
+          </div>
+          {/* <nav id="side-navbar">
               <div className="nav-wrapper">
                 <a href="#home">/home</a>
                 <a href="#about-me-section">/about</a>
                 <a href="#topics-section">/journal</a>
               </div>
             </nav> */}
-          </div>
-        </header>
-      </div>
+        </div>
+      </header>
     );
   }
 }

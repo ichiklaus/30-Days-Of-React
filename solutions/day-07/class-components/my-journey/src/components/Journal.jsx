@@ -14,7 +14,9 @@ import {
   WarningButton,
   DangerButton,
   DefaultButton,
-} from "../mocks/HOCSnipet";
+} from "../utils/HOCButtonImports";
+// import CountryFetch from "../api/services/CountryFetch";
+import DisplayCountry from "./DisplayCountry";
 
 class Journal extends React.Component {
   constructor(props) {
@@ -26,7 +28,7 @@ class Journal extends React.Component {
   }
   render() {
     return (
-      <div>
+      <main className="main-wrapper">
         <div id="topics-header" className="section-header">
           <h2 className="section-title">/ my 30 days of React journey</h2>
         </div>
@@ -286,8 +288,8 @@ return (<div>mappedArray<div>);`}
           HOC and class-based HOC. Here is a mockup exercise I took from the
           challenge and wrote it after reviewing the code:
         </p>
-        <div className="grid-container mt-4">
-          <div className="grid-auto-fill">
+        <div className="grid-container g50 mt-4">
+          <div className="grid-auto-fill space-1">
             {<ReactButton text={"React"} />}
             {<InfoButton text={"Info"} />}
             {<SuccessButton text={"Success"} />}
@@ -310,7 +312,26 @@ return (<div>mappedArray<div>);`}
           page. In the coming days I'm gonna reestructure the project and create
           routes for the login, journal, and home sections.
         </p>
-      </div>
+        <p className="paragraph">
+          I reestructured the project and created navigation links using
+          react-router-dom. Took me some time to understand the structure using
+          nested routes, but in the end I managed to make it work setting the
+          RouterIndex.js as the parent component for content, while rendering
+          the footer alongide - meaning {"<RouterApp />"} and {"<Footer />"} are
+          rendered in index.js
+        </p>
+        <h4>## Day-18</h4>
+        <p className="paragraph">
+          Fetching and Axios. On day 18 I worked with API calling using
+          fetching() and axios() and how to implementing using async - await or
+          promises. To make the code modularized I applied the concept of
+          Higher-order Components to since the code for API calling is
+          practically similar with both methods. Below, there's an application
+          of the two methods.
+        </p>
+        {/* <CountryFetch /> */}
+        <DisplayCountry />
+      </main>
     );
   }
 }

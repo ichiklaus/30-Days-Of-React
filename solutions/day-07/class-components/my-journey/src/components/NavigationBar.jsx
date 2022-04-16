@@ -13,18 +13,18 @@ let NavigationBar = () => {
           <NavLink className="navlink-li" to="/about">
             About
           </NavLink>
-          <NavLink className="navlink-li" to="/contact">
-            Contact
-          </NavLink>
           <NavLink className="navlink-li" to="/journey">
             Journal
           </NavLink>
-          <NavLink className="navlink-li" to="/invoices">
+          <NavLink className="navlink-li" to="/contact">
+            Contact
+          </NavLink>
+          {/* <NavLink className="navlink-li" to="/invoices">
             Invoices
           </NavLink>
           <NavLink className="navlink-li" to="/expenses">
             Expenses
-          </NavLink>
+          </NavLink> */}
         </ul>
       </nav>
       <Header welcomeSection={welcomeSection} myInfo={myInfo} />
