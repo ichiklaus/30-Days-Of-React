@@ -83,3 +83,21 @@ This was about High Order Components. I reviewed about both functinal HOC and cl
 
 ## Day 17
 Between 11 and 12 of april I reviewed the basics of React Routing. I used the version 6 even though the curriculum uses version 5. Differences I could notice so far between the versions are that Switches in v5 renames to Routes in v6; component and render properties are replaced by element in order to render components. I learned the difference between Link and NavLink which is that in the former, Link doesn't allow styling, whereas in NavLink I'm able to use styles and className. Also, in v5 it was named activeClassName and activeStyle. I implemented routing in a navbar that's on top of the page. In the coming days I'm gonna reestructure the project and create routes for the login, journal, and home sections.
+
+## Day 18
+On day 18 I learnt to fetch data from APIs using fetch method and axios library, basic concepts and differences like how axios is supported in more browser and seemingly faster,counterwise fetch. I built a single small app that fetches data using both fetch API and Axios to render general information of countries in the world.
+
+## Day 19 & Day 20
+On day 19 focused on building projects applying everything learnt so far so I decided to build a github-user search application from Frontend Mentor challenge using this time functional components (using Hooks), the axios library, and tailwindcss. I've taken in consideration that 2 days are dedicated to build 2 different projects, so in the run I will be building another project, bigger than the Github-user search app. As for now I will keep on learning Hooks.
+
+## Day 21
+On day 21 I was introduced to Hooks, so far I've learnt to use useState() and useEffect(): useEffect() is the equivalent of state and setState() (combined) in class components. and useEffect(), as mentioned in the docs, <em>"is the combination of componentDidMount(), componentDidUpdate(), and componentWillUnmount()"</em>; useEffect() gives an initial state after the component has been rendered while giving the ability to clean up said state using and empty array parameter, like: useEffect(method, []).
+
+## Day 22
+On day 22 I created a simple form using useState hook while trying to implement a custom form validation that was used in a previous day. I couldn't make it work. I have to practice custom form validations and using some library.
+
+## Day 23 && Day 25
+  - Day 23 was about fetching data from an API and hooking the state. It's something I was already familiar with because I worked with this when I built the GitHub user search app.
+  - For day 24 I have to make a project fetching data from an API with hooks.
+  - Lastly, for day 25 I learnt to create custom hooks; in this specific case, I created a custom hook to fetch the data from the countries API. It much looks like a callback method.
+

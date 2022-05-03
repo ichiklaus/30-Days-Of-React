@@ -1,33 +1,7 @@
 import React, { Component } from "react";
 
-const options = [
-  {
-    value: "",
-    label: "-- Select Country --",
-  },
-  {
-    value: "Finland",
-    label: "Finland",
-  },
-  {
-    value: "Sweden",
-    label: "Sweden",
-  },
-  {
-    value: "Norway",
-    label: "Norway",
-  },
-  {
-    value: "Denmark",
-    label: "Denmark",
-  },
-];
+import { selectOptions } from "../utils/CountryOptions";
 
-const selectOptions = options.map(({ value, label }) => (
-  <option key={value} value={value}>
-    {label}
-  </option>
-));
 
 class FormPP extends Component {
   lastnameRef = React.createRef();

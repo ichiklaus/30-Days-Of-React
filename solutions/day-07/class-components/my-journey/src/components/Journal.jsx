@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
+
 import Aritmethic from "./Aritmethic";
 import Pet from "./Pet";
 import ActionButton from "./ActionButton";
@@ -7,6 +9,7 @@ import OnMouseEnter from "./OnMouseEnter";
 import Form from "./Form";
 import FormPP from "./FormPP";
 import Countries from "./Countries";
+import FetchedCountry from "./FetchWithHooks";
 import {
   ReactButton,
   SuccessButton,
@@ -330,7 +333,47 @@ return (<div>mappedArray<div>);`}
           of the two methods.
         </p>
         {/* <CountryFetch /> */}
+        {/* Higher-order Component to fetch data with fetch and axios library */}
         <DisplayCountry />
+        <h4>## Day-19 && Day-20</h4>
+        <p className="paragraph">
+          On day 19 focused on building projects applying everything learnt so
+          far so I decided to build a github-user search application from
+          Frontend Mentor challenge using this time functional components (using
+          Hooks), the axios library, and tailwindcss. I've taken in
+          consideration that 2 days are dedicated to build 2 different projects,
+          so in the run I will be building another project, bigger than the
+          Github-user search app. As for now I will keep on learning Hooks.
+        </p>
+        <h4>## Day-21</h4>
+        <p className="paragraph">
+          On day 21 I was introduced to Hooks, so far I've learnt to use
+          useState() and useEffect(): useEffect() is the equivalent of state and
+          setState() (combined) in class components. and useEffect(), as
+          mentioned in the docs,{" "}
+          <em>
+            "is the combination of componentDidMount(), componentDidUpdate(),
+            and componentWillUnmount()"
+          </em>
+          ; useEffect() gives an initial state after the component has been
+          rendered while giving the ability to clean up said state using and
+          empty array parameter, like: useEffect(method, []).
+        </p>
+        <h4>## Day-22</h4>
+        <p className="paragraph">On day 22 I'm practicing forms with hooks.</p>
+        <p className="paragraph">
+          {" "}
+          <span>
+            Click to go to the new section with{" "}
+            <Link to="/extra-content">Form with Hooks</Link>{" "}
+          </span>{" "}
+          <Outlet />
+        </p>
+        <h4>## Day-23 && Day-25</h4>
+            <p className="paragraph">
+              On day 23 I'm retaking fetching data with axios and creating Custom Hooks:
+            </p>
+            <FetchedCountry />
       </main>
     );
   }
