@@ -20,6 +20,7 @@ import {
 } from "../utils/HOCButtonImports";
 // import CountryFetch from "../api/services/CountryFetch";
 import DisplayCountry from "./DisplayCountry";
+import UseRef from "./UseRef";
 
 class Journal extends React.Component {
   constructor(props) {
@@ -335,7 +336,7 @@ return (<div>mappedArray<div>);`}
         {/* <CountryFetch /> */}
         {/* Higher-order Component to fetch data with fetch and axios library */}
         <DisplayCountry />
-        <h4>## Day-19 && Day-20</h4>
+        <h4>## Day-19 & Day-20</h4>
         <p className="paragraph">
           On day 19 focused on building projects applying everything learnt so
           far so I decided to build a github-user search application from
@@ -369,11 +370,30 @@ return (<div>mappedArray<div>);`}
           </span>{" "}
           <Outlet />
         </p>
-        <h4>## Day-23 && Day-25</h4>
-            <p className="paragraph">
-              On day 23 I'm retaking fetching data with axios and creating Custom Hooks:
-            </p>
-            <FetchedCountry />
+        <h4>## Day-23 & Day-25</h4>
+        <p className="paragraph">
+          On day 23 I'm retaking fetching data with axios and creating Custom
+          Hooks:
+        </p>
+        <FetchedCountry />
+        <h4 className="mt-5">## Day-26 & Day-27</h4>
+        <p className="paragraph">
+          Day 26 focused on context, which in short is about passing data down
+          the component tree. Being honest, it's a concept I didn't quite
+          understand so I have to read the docs properly and test code.
+        </p>
+        <p className="paragraph">
+          Day 27 was about the useRef Hook. An actual useful hook to manipulate
+          the DOM elements, read from them...
+        </p>
+        <UseRef />
+        <h4 className="mt-5">## Day-28, Day-29 & Day-30</h4>
+        <p className="paragraph">
+          The last 3 days is about reflection and building a CRUD application.
+          For now I'm postponing building the CRUD app and will focus on data
+          fetching, and review on other concepts such as Redux, unit testing,
+          deployment, and CI.
+        </p>
       </main>
     );
   }

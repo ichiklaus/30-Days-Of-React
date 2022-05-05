@@ -10,5 +10,5 @@
     --white: #e6f1ff;
     --green-bright: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
-    --gold-tint: rgba(185, 132, 78, 1);
+    --gold-tint: hsl(30, 43%, 52%);
   }

@@ -19,9 +19,9 @@ let NavigationBar = () => {
           <NavLink className="navlink-li" to="/contact">
             Contact
           </NavLink>
-          <NavLink className="navlink-li" to="/extra-content">
+          {/* <NavLink className="navlink-li" to="/extra-content">
             Extra Content
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink className="navlink-li" to="/invoices">
             Invoices
           </NavLink>
